@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include heero *.css
+recursive-include heero *.csv
+recursive-include heero *.html
+recursive-include heero *.ico
+recursive-include heero *.js
+recursive-include heero *.json
+recursive-include heero *.md
+recursive-include heero *.png
+recursive-include heero *.py
+recursive-include heero *.svg
+recursive-include heero *.txt
+recursive-exclude heero *.pyc
