@@ -7,6 +7,9 @@ app_description = "app for alltargeting"
 app_email = "menaheero@gmail.com"
 app_license = "MIT"
 
+
+fixtures =["Custom Field"]
+
 # Includes in <head>
 # ------------------
 

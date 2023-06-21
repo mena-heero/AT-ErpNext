@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:website",
+ "creation": "2023-06-19 16:02:25.835823",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "website",
+  "influencer",
+  "influencer_channel",
+  "full_contacts",
+  "contacted",
+  "section_break_lpofw",
+  "insterted_by",
+  "email",
+  "email2",
+  "column_break_dpkpm",
+  "phone",
+  "phone2",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "unique": 1
+  },
+  {
+   "fieldname": "influencer",
+   "fieldtype": "Data",
+   "label": "Influencer"
+  },
+  {
+   "fieldname": "influencer_channel",
+   "fieldtype": "Data",
+   "label": "Influencer Channel"
+  },
+  {
+   "fieldname": "full_contacts",
+   "fieldtype": "Text Editor",
+   "label": "Full Contacts"
+  },
+  {
+   "default": "0",
+   "fieldname": "contacted",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Contacted"
+  },
+  {
+   "fieldname": "section_break_lpofw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Other",
+   "fieldname": "insterted_by",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Insterted By",
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nOther"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "email2",
+   "fieldtype": "Data",
+   "label": "Email2"
+  },
+  {
+   "fieldname": "column_break_dpkpm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "phone2",
+   "fieldtype": "Data",
+   "label": "Phone2"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-19 16:17:22.346307",
+ "modified_by": "Administrator",
+ "module": "Heero",
+ "name": "Advertiser",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

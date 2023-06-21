@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:channel_name",
+ "creation": "2023-06-18 18:50:04.093417",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "channel_name",
+  "channel_link",
+  "category",
+  "geo",
+  "subscribers",
+  "column_break_nduls",
+  "platform",
+  "statistics",
+  "price",
+  "status",
+  "pastads",
+  "section_break_2yanu",
+  "deal",
+  "gcc_ratio",
+  "email",
+  "phone_number",
+  "column_break_80lb7",
+  "chat_screens",
+  "previous_ads",
+  "whatsapp_group_name",
+  "engagement20",
+  "inserted_by",
+  "photo",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "channel_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Channel Name ",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "channel_link",
+   "fieldtype": "Text",
+   "label": "Channel link"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Entertainment- stories & Mystery\nEducation\nEarn|Eonomics | Trading\nScience and Technology\nRelegion\nGaming\nSports\nFashion\nAutos and Vehicles\nNews and Politics\nHow-to and Style\nComedy\nHealth\nEntertainment\nTraveling\nCooking\nPets & Animals"
+  },
+  {
+   "fieldname": "geo",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Geo",
+   "options": "GCC\nEgypt\nMorocco\nIraq\nTurkey\nTunis\nSyria\nJordan\nAlgeria\nLebonan\nCanda\nUSA\nSpain\nAustria\nIsrael\nSudan\nindia\nHoland\nGermany\nOman\nlibya"
+  },
+  {
+   "fieldname": "subscribers",
+   "fieldtype": "Data",
+   "label": "Subscribers"
+  },
+  {
+   "fieldname": "column_break_nduls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Platform",
+   "options": "Youtube\nInstagram\nInsta+ Tiktok+ Face\nSnapChat\ninsta+tiktok+youtube\nINSTA+SNAP\nyoutube+insta\nsnap+youtube\nface+Youtube\nyoutube+tiktok\nTiktok\nyoutube+face+tiktok\nFacebook\nyoutube+insta+face\nInsta+Tiktok\nFace+Insta\ninst+tiktok+snap\nyoutube+insta+face+tiktok\nFace+Tiktok"
+  },
+  {
+   "fieldname": "statistics",
+   "fieldtype": "Data",
+   "label": "Statistics"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "Price"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Cancel\nFollow Up\nNew"
+  },
+  {
+   "fieldname": "pastads",
+   "fieldtype": "Select",
+   "label": "Past.Ads",
+   "options": "Paid\nCommisiion"
+  },
+  {
+   "fieldname": "section_break_2yanu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "deal",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Deal",
+   "options": "Partnership\nPotential long term\nPotential"
+  },
+  {
+   "fieldname": "gcc_ratio",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "GCC Ratio",
+   "options": "GCC+5\nGCC+10"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "column_break_80lb7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chat_screens",
+   "fieldtype": "Attach",
+   "label": "Chat Screens"
+  },
+  {
+   "fieldname": "previous_ads",
+   "fieldtype": "Text",
+   "label": "Previous ADS"
+  },
+  {
+   "fieldname": "whatsapp_group_name",
+   "fieldtype": "Data",
+   "label": "Whatsapp Group Name "
+  },
+  {
+   "default": "0",
+   "fieldname": "engagement20",
+   "fieldtype": "Check",
+   "label": "Engagement20"
+  },
+  {
+   "default": "Other",
+   "fieldname": "inserted_by",
+   "fieldtype": "Select",
+   "label": "Inserted By",
+   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nOther"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "image_field": "photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-20 08:23:50.032202",
+ "modified_by": "Administrator",
+ "module": "Heero",
+ "name": "Influencers",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
