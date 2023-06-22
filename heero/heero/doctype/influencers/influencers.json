@@ -14,6 +14,7 @@
   "category",
   "geo",
   "subscribers",
+  "subcs",
   "column_break_nduls",
   "platform",
   "statistics",
@@ -170,12 +171,17 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
+  },
+  {
+   "fieldname": "subcs",
+   "fieldtype": "Data",
+   "label": "subcs"
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-20 08:23:50.032202",
+ "modified": "2023-06-22 18:05:53.883760",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Influencers",
