@@ -20,3 +20,20 @@ frappe.ui.form.on('Influencers', {
         });
     }
 });
+frappe.ui.form.on('Influencers', {
+    refresh: function(frm) {
+        // Add a click event listener to your custom button
+        frm.add_custom_button(__('Transfer to Lead'), function() {
+            frappe.call({
+                method: 'heero.heero.doctype.influencers.influencers.transfer_to_lead',
+                args: {
+                    docname: frm.doc.name
+                },
+                callback: function(response) {
+                    // Show success or error message
+                    frappe.msgprint(response.message);
+                }
+            });
+        });
+    }
+});

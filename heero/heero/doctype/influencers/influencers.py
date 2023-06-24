@@ -80,3 +80,21 @@ def get_subscriber_count(channel_url, api_key):
         logging.error(f"Error parsing API response: {e}")
 
     return None
+
+
+
+
+@frappe.whitelist()
+def transfer_to_lead(docname):
+    influencer = frappe.get_doc("Influencers", docname)
+
+    # Create a new Lead document
+    lead = frappe.new_doc("Lead")
+    lead.first_name = influencer.channel_name
+    lead.website = influencer.channel_link
+    lead.phone = influencer.phone_number
+    lead.inserted_by = influencer.inserted_by
+
+    lead.insert(ignore_permissions=True)
+
+    frappe.msgprint("Influencer transferred to Lead successfully.")
