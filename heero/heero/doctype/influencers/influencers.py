@@ -87,7 +87,12 @@ def get_subscriber_count(channel_url, api_key):
 @frappe.whitelist()
 def transfer_to_lead(docname):
     influencer = frappe.get_doc("Influencers", docname)
+    # Check if a lead with the same first_name already exists
+    existing_lead = frappe.get_all("Lead", filters={"first_name": influencer.channel_name})
 
+    if existing_lead:
+        frappe.msgprint("Lead with the same first name already exists. Transfer aborted.")
+        return
     # Create a new Lead document
     lead = frappe.new_doc("Lead")
     lead.first_name = influencer.channel_name
