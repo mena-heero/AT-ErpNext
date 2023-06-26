@@ -33,7 +33,11 @@
   "engagement20",
   "inserted_by",
   "photo",
-  "date"
+  "date",
+  "insta_followers",
+  "influencer_channels_section",
+  "channels",
+  "heero"
  ],
  "fields": [
   {
@@ -175,13 +179,36 @@
   {
    "fieldname": "subcs",
    "fieldtype": "Data",
-   "label": "subcs"
+   "in_list_view": 1,
+   "label": "YT Subscribes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "insta_followers",
+   "fieldtype": "Data",
+   "label": "Insta Followers"
+  },
+  {
+   "fieldname": "influencer_channels_section",
+   "fieldtype": "Section Break",
+   "label": "Influencer Channels"
+  },
+  {
+   "fieldname": "channels",
+   "fieldtype": "Table",
+   "label": "Influencer Channels",
+   "options": "Influencer Channels"
+  },
+  {
+   "fieldname": "heero",
+   "fieldtype": "Data",
+   "label": "Heero"
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-22 18:05:53.883760",
+ "modified": "2023-06-26 10:30:25.961947",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Influencers",

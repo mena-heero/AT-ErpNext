@@ -5,7 +5,7 @@ import frappe
 import requests
 import logging
 import re
-
+from bs4 import BeautifulSoup
 
 class Influencers(Document):
 	pass
@@ -81,6 +81,44 @@ def get_subscriber_count(channel_url, api_key):
 
     return None
 
+@frappe.whitelist()
+def update_instagram_followers_count(docname):
+    # Fetch the document using docname
+    doc = frappe.get_doc("Influencers", docname)
+    instagram_link = doc.channel_link
+
+    followers_count = scrape_followers_count(instagram_link)
+
+    if followers_count is not None:
+        # Update the read-only field
+        doc.insta_followers = followers_count
+        doc.save(ignore_permissions=True)
+        frappe.msgprint("Instagram followers count updated successfully.")
+    else:
+        frappe.msgprint("Failed to retrieve Instagram followers count.")
+
+
+def convert_to_numeric(value):
+    if value.endswith('M'):
+        return int(float(value[:-1]) * 1000000)
+    elif value.endswith('K'):
+        return int(float(value[:-1]) * 1000)
+    else:
+        return int(value.replace(',', ''))
+
+
+def scrape_followers_count(instagram_link):
+    response = requests.get(instagram_link)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    meta_tag = soup.find('meta', property='og:description')
+    if meta_tag is not None:
+        content = meta_tag['content']
+        followers_count_text = content.split()[0].replace(',', '')
+        followers_count = convert_to_numeric(followers_count_text)
+        return followers_count
+    else:
+        return None
 
 
 

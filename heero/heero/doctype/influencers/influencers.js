@@ -1,5 +1,5 @@
 frappe.ui.form.on("Influencers", "refresh", function(frm) {
-    frm.add_custom_button(__('Update Subscriber Count'), function(){
+    frm.add_custom_button(__('Update  YT Subscribers'), function(){
         // Your code for the "Update Subscriber Count" button
         frappe.call({
             method: 'heero.heero.doctype.influencers.influencers.update_subscriber_count',
@@ -24,6 +24,21 @@ frappe.ui.form.on("Influencers", "refresh", function(frm) {
             callback: function(response) {
                 // Show success or error message
                 frappe.msgprint(response.message);
+            }
+        });
+    }, __("Actions"));
+
+    frm.add_custom_button(__('Update Instagram Followers'), function(){
+        // Your code for the "Update Instagram Followers" button
+        frappe.call({
+            method: 'heero.heero.doctype.influencers.influencers.update_instagram_followers_count',
+            args: {
+                docname: frm.doc.name
+            },
+            callback: function(response) {
+                // Show success or error message
+                frappe.msgprint(response.message);
+                frm.refresh_field('insta_followers');
             }
         });
     }, __("Actions"));
