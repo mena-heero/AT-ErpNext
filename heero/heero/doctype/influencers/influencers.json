@@ -10,34 +10,34 @@
  "engine": "InnoDB",
  "field_order": [
   "channel_name",
-  "channel_link",
   "category",
   "geo",
   "subscribers",
-  "subcs",
   "column_break_nduls",
+  "subcs",
+  "insta_followers",
   "platform",
   "statistics",
+  "section_break_2yanu",
   "price",
   "status",
   "pastads",
-  "section_break_2yanu",
   "deal",
   "gcc_ratio",
   "email",
   "phone_number",
+  "engagement20",
   "column_break_80lb7",
   "chat_screens",
-  "previous_ads",
   "whatsapp_group_name",
-  "engagement20",
   "inserted_by",
   "photo",
-  "date",
-  "insta_followers",
   "influencer_channels_section",
   "channels",
-  "heero"
+  "section_break_mdvjg",
+  "previous_ads",
+  "column_break_ljqpt",
+  "channel_link"
  ],
  "fields": [
   {
@@ -160,21 +160,16 @@
    "label": "Engagement20"
   },
   {
-   "default": "Other",
+   "default": "other",
    "fieldname": "inserted_by",
    "fieldtype": "Select",
    "label": "Inserted By",
-   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nOther"
+   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nother"
   },
   {
    "fieldname": "photo",
    "fieldtype": "Attach Image",
    "label": "Photo"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
   },
   {
    "fieldname": "subcs",
@@ -186,12 +181,13 @@
   {
    "fieldname": "insta_followers",
    "fieldtype": "Data",
-   "label": "Insta Followers"
+   "label": "Insta Followers",
+   "read_only": 1
   },
   {
    "fieldname": "influencer_channels_section",
    "fieldtype": "Section Break",
-   "label": "Influencer Channels"
+   "label": "Channels"
   },
   {
    "fieldname": "channels",
@@ -200,15 +196,19 @@
    "options": "Influencer Channels"
   },
   {
-   "fieldname": "heero",
-   "fieldtype": "Data",
-   "label": "Heero"
+   "fieldname": "section_break_mdvjg",
+   "fieldtype": "Section Break",
+   "label": "Links"
+  },
+  {
+   "fieldname": "column_break_ljqpt",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-26 10:30:25.961947",
+ "modified": "2023-06-26 13:30:58.228727",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Influencers",

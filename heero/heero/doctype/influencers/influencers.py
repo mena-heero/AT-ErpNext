@@ -6,6 +6,7 @@ import requests
 import logging
 import re
 from bs4 import BeautifulSoup
+import urllib.parse
 
 class Influencers(Document):
 	pass
@@ -30,14 +31,23 @@ def update_subscriber_count(docname):
 
 
 def get_channel_id(channel_url, api_key):
-    match = re.match(r"https://www.youtube.com/(?:c/|@)([^/]+)", channel_url)
-    if match:
-        username = match.group(1)
-    else:
-        logging.error("Invalid YouTube channel URL.")
-        return None
+    parsed_url = urllib.parse.urlparse(channel_url)
+    path_parts = parsed_url.path.split('/')
 
-    url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&type=channel&q={username}&key={api_key}"
+    if len(path_parts) >= 3 and path_parts[1] == 'channel':
+        channel_id = path_parts[2]
+        return channel_id
+    elif len(path_parts) >= 2 and path_parts[1] == 'user':
+        username = path_parts[2]
+        url = f"https://www.googleapis.com/youtube/v3/channels?part=snippet&forUsername={username}&key={api_key}"
+    else:
+        match = re.match(r"https?://(?:www\.)?youtube\.com/(?:c/|@)([^/]+)", channel_url, re.UNICODE)
+        if match:
+            username = urllib.parse.quote(match.group(1), safe='')
+            url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&type=channel&q={username}&key={api_key}"
+        else:
+            logging.error("Invalid YouTube channel URL.")
+            return None
 
     try:
         response = requests.get(url)
@@ -54,6 +64,7 @@ def get_channel_id(channel_url, api_key):
         logging.error(f"Error retrieving channel ID: {e}")
 
     return None
+
 
 
 def get_subscriber_count(channel_url, api_key):
