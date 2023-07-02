@@ -35,14 +35,14 @@
    "allow_in_quick_entry": 1,
    "columns": 1,
    "fieldname": "followers",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Followers"
   },
   {
    "columns": 1,
    "fieldname": "engagement",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Engagement "
   },
@@ -57,7 +57,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-06-26 11:25:02.682981",
+ "modified": "2023-06-26 14:47:28.511959",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Influencer Channels",

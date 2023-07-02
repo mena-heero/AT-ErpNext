@@ -16,11 +16,11 @@
   "column_break_nduls",
   "subcs",
   "insta_followers",
-  "platform",
   "statistics",
-  "section_break_2yanu",
   "price",
+  "platform",
   "status",
+  "section_break_2yanu",
   "pastads",
   "deal",
   "gcc_ratio",
@@ -37,7 +37,11 @@
   "section_break_mdvjg",
   "previous_ads",
   "column_break_ljqpt",
-  "channel_link"
+  "channel_link",
+  "tiktok_followers",
+  "snapchat_followers",
+  "facebook_followers",
+  "stats"
  ],
  "fields": [
   {
@@ -108,7 +112,8 @@
   },
   {
    "fieldname": "section_break_2yanu",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Other Data"
   },
   {
    "fieldname": "deal",
@@ -203,12 +208,35 @@
   {
    "fieldname": "column_break_ljqpt",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tiktok_followers",
+   "fieldtype": "Data",
+   "label": "Tiktok Followers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "snapchat_followers",
+   "fieldtype": "Data",
+   "label": "Snapchat Followers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stats",
+   "fieldtype": "Attach",
+   "label": "Stats"
+  },
+  {
+   "fieldname": "facebook_followers",
+   "fieldtype": "Data",
+   "label": "Facebook Followers",
+   "read_only": 1
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-26 13:30:58.228727",
+ "modified": "2023-06-28 14:48:58.212111",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Influencers",

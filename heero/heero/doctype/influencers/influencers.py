@@ -1,4 +1,3 @@
-
 # import frappe
 from frappe.model.document import Document
 import frappe
@@ -9,7 +8,7 @@ from bs4 import BeautifulSoup
 import urllib.parse
 
 class Influencers(Document):
-	pass
+    pass
 
 
 @frappe.whitelist()
@@ -66,7 +65,6 @@ def get_channel_id(channel_url, api_key):
     return None
 
 
-
 def get_subscriber_count(channel_url, api_key):
     channel_id = get_channel_id(channel_url, api_key)
     if not channel_id:
@@ -92,13 +90,14 @@ def get_subscriber_count(channel_url, api_key):
 
     return None
 
+
 @frappe.whitelist()
 def update_instagram_followers_count(docname):
     # Fetch the document using docname
     doc = frappe.get_doc("Influencers", docname)
     instagram_link = doc.channel_link
 
-    followers_count = scrape_followers_count(instagram_link)
+    followers_count = scrape_instagram_followers_count(instagram_link)
 
     if followers_count is not None:
         # Update the read-only field
@@ -118,7 +117,7 @@ def convert_to_numeric(value):
         return int(value.replace(',', ''))
 
 
-def scrape_followers_count(instagram_link):
+def scrape_instagram_followers_count(instagram_link):
     response = requests.get(instagram_link)
     soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -130,7 +129,6 @@ def scrape_followers_count(instagram_link):
         return followers_count
     else:
         return None
-
 
 
 @frappe.whitelist()
@@ -152,3 +150,64 @@ def transfer_to_lead(docname):
     lead.insert(ignore_permissions=True)
 
     frappe.msgprint("Influencer transferred to Lead successfully.")
+
+
+@frappe.whitelist()
+def update_tiktok_followers_count(docname):
+    # Fetch the document using docname
+    doc = frappe.get_doc("Influencers", docname)
+    tiktok_link = doc.channel_link
+
+    followers_count = scrape_tiktok_followers_count(tiktok_link)
+
+    if followers_count is not None:
+        # Update the read-only field
+        doc.tiktok_followers = followers_count
+        doc.save(ignore_permissions=True)
+        frappe.msgprint("Tiktok followers count updated successfully.")
+    else:
+        frappe.msgprint("Failed to retrieve Tiktok followers count.")
+
+
+def scrape_tiktok_followers_count(tiktok_link):
+    response = requests.get(tiktok_link)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    followers_tag = soup.find('strong', {'title': 'Followers', 'data-e2e': 'followers-count'})
+    if followers_tag is not None:
+        followers_count_text = followers_tag.text.strip()
+        followers_count = convert_to_numeric(followers_count_text)
+        return followers_count
+    else:
+        return None
+
+
+@frappe.whitelist()
+def update_snapchat_followers_count(docname):
+    # Fetch the document using docname
+    doc = frappe.get_doc("Influencers", docname)
+    snapchat_link = doc.channel_link
+
+    followers_count = scrape_snapchat_followers_count(snapchat_link)
+
+    if followers_count is not None:
+        # Update the read-only field
+        doc.snapchat_followers = followers_count
+        doc.save(ignore_permissions=True)
+        frappe.msgprint("Snapchat followers count updated successfully.")
+    else:
+        frappe.msgprint("Failed to retrieve Snapchat followers count.")
+
+
+def scrape_snapchat_followers_count(snapchat_link):
+    response = requests.get(snapchat_link)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    followers_tag = soup.find('div', class_="PublicProfileDetailsCard_mobileSubscriberText__75XFZ PublicProfileDetailsCard_subscribersMobile__i9hVc")
+    if followers_tag is not None:
+        followers_count_text = followers_tag.text.strip()
+        followers_count = convert_to_numeric(followers_count_text)
+        return followers_count
+    else:
+        return None
+
