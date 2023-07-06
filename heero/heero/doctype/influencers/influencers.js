@@ -76,43 +76,40 @@ frappe.ui.form.on('Influencers', {
       }, __("Subscribers"));
   
       frm.add_custom_button(__('Update Channels'), function() {
-        var channelLinks = frm.doc.channel_link.split('\n');
-        var childTable = frm.doc.influencer_channels || [];
-  
-        for (var i = 0; i < channelLinks.length; i++) {
-          var channelLink = channelLinks[i].trim();
-          if (channelLink) {
-            var platform = getPlatformFromLink(channelLink);
-            var existingChannel = childTable.find(row => row.channel_link === channelLink);
-  
-            if (!existingChannel) {
-              var childRow = frappe.model.add_child(frm.doc, 'Influencer Channels', 'influencer_channels');
-              childRow.channel_link = channelLink;
-              childRow.platform = platform;
+        var doc = frm.doc;
+        frappe.call({
+            method: 'heero.heero.doctype.influencers.channels.update_channels',
+            args: {
+                doc: doc
+            },
+            callback: function(response) {
+                if (response.message) {
+                    // Success
+                    frm.refresh_field('channels');
+                    frappe.msgprint('Channels updated successfully.');
+                } else {
+                    // Error
+                    frappe.msgprint('Failed to update channels.');
+                }
             }
+        });
+    }, __("Actions"));
+    frm.add_custom_button(__('Attach Images'), function() {
+      frappe.call({
+          method: 'heero.heero.doctype.influencers.download.download_images_for_influencer',
+          args: {
+              influencer_docname: frm.doc.name
+          },
+          callback: function(response) {
+              frappe.msgprint(response.message);
+              frm.reload_doc();
           }
-        }
+      });
+  }, __("Actions"));
   
-        frm.refresh_field('influencer_channels');
-      }, __("Actions"));
+    
+    
     }
   });
   
-  function getPlatformFromLink(link) {
-    if (link.includes('youtube.com') || link.includes('youtu.be')) {
-      return 'YouTube';
-    } else if (link.includes('facebook.com')) {
-      return 'Facebook';
-    } else if (link.includes('instagram.com')) {
-      return 'Instagram';
-    } else if (link.includes('tiktok.com')) {
-      return 'TikTok';
-    } else if (link.includes('snapchat.com')) {
-      return 'Snapchat';
-    } else if (link.includes('twitter.com')) {
-      return 'Twitter';
-    } else {
-      return '';
-    }
-  }
   
