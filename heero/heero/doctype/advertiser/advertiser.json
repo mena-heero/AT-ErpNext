@@ -21,8 +21,7 @@
   "column_break_dpkpm",
   "phone",
   "phone2",
-  "notes",
-  "contacts"
+  "notes"
  ],
  "fields": [
   {
@@ -93,17 +92,11 @@
    "fieldname": "notes",
    "fieldtype": "Text Editor",
    "label": "Notes"
-  },
-  {
-   "fieldname": "contacts",
-   "fieldtype": "Table",
-   "label": "Contacts",
-   "options": "Advertiser Contacts"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-21 17:54:18.262619",
+ "modified": "2023-06-28 10:32:53.344997",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Advertiser",
