@@ -1,0 +1,32 @@
+[
+    {
+        "commit": "7831896",
+        "app": "erpnext",
+        "branch": "version-14",
+        "version": "14.29.1"
+    },
+    {
+        "commit": "85e169e",
+        "app": "frappe",
+        "branch": "version-14",
+        "version": "14.40.1"
+    },
+    {
+        "commit": "65f4aff",
+        "app": "heero",
+        "branch": "main",
+        "version": "0.0.1"
+    },
+    {
+        "commit": "0f8b624",
+        "app": "hrms",
+        "branch": "version-14",
+        "version": "14.5.0"
+    },
+    {
+        "commit": "be9a2e3",
+        "app": "payments",
+        "branch": "develop",
+        "version": "0.0.1"
+    }
+]

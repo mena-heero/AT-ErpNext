@@ -12,15 +12,18 @@
   "website",
   "influencer",
   "influencer_channel",
-  "full_contacts",
+  "column_break_tuopd",
   "contacted",
-  "section_break_lpofw",
   "insterted_by",
+  "section_break_lpofw",
   "email",
   "email2",
   "column_break_dpkpm",
   "phone",
   "phone2",
+  "section_break_wyil4",
+  "full_contacts",
+  "column_break_ztqdx",
   "notes"
  ],
  "fields": [
@@ -92,11 +95,23 @@
    "fieldname": "notes",
    "fieldtype": "Text Editor",
    "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_wyil4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ztqdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tuopd",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-28 10:32:53.344997",
+ "modified": "2023-07-09 10:58:44.167334",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Advertiser",

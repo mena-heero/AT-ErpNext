@@ -1,0 +1,55 @@
+
+  <div class="container">
+    <h1>Lead Form</h1>
+    <form id="leadForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+ 
+  <script>
+    $(document).ready(function() {
+  $('#leadForm').submit(function(event) {
+    event.preventDefault(); // Prevent form submission
+    var formData = $(this).serializeArray(); // Serialize form data
+
+    // Convert the serialized array to an object
+    var formObject = {};
+    formData.forEach(function(item) {
+      formObject[item.name] = item.value;
+    });
+
+    frappe.call({
+      method: 'heero.heero.doctype.lead_form.create_lead', // Specify your backend method to handle lead creation
+      type: 'POST',
+      args: {
+        'data': formObject // Pass the formObject as the data argument
+      },
+      success: function(response) {
+        // Handle success response
+        console.log(response);
+        alert('Lead created successfully!');
+        // Perform any additional actions or redirect as needed
+      },
+      error: function(xhr, textStatus, error) {
+        // Handle error response
+        console.log(xhr.responseText);
+        alert('Lead creation failed. Please try again.');
+      }
+    });
+  });
+});
+  </script>
+
+<!-- heero.heero.doctype.lead_form.create_lead' -->
