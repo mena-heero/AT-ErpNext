@@ -1,7 +1,7 @@
 import frappe
 from frappe import _
 
-@frappe.whitelist()
+@frappe.whitelist(allow_guest=True)
 def create_lead(data):
     try:
         # Extract form data from 'data' argument and process as needed
