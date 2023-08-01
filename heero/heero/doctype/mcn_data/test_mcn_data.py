@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestATWeb(FrappeTestCase):
+class TestMCNData(FrappeTestCase):
 	pass

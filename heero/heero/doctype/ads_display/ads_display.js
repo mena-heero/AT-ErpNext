@@ -1,7 +1,7 @@
 // Copyright (c) 2023, Heero and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Timed Sheet', {
+frappe.ui.form.on('Ads Display', {
 	// refresh: function(frm) {
 
 	// }

@@ -41,7 +41,8 @@
   "tiktok_followers",
   "snapchat_followers",
   "facebook_followers",
-  "stats"
+  "stats",
+  "indicator_color"
  ],
  "fields": [
   {
@@ -169,7 +170,7 @@
    "fieldname": "inserted_by",
    "fieldtype": "Select",
    "label": "Inserted By",
-   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nother"
+   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nNairaa\nShahinda\nother"
   },
   {
    "fieldname": "photo",
@@ -231,12 +232,19 @@
    "fieldtype": "Data",
    "label": "Facebook Followers",
    "read_only": 1
+  },
+  {
+   "fieldname": "indicator_color",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "indicator_color",
+   "read_only": 1
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-28 14:48:58.212111",
+ "modified": "2023-07-25 09:13:32.261943",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Influencers",

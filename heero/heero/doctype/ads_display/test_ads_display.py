@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestTimedSheet(FrappeTestCase):
+class TestAdsDisplay(FrappeTestCase):
 	pass
