@@ -26,7 +26,8 @@
   "full_contacts",
   "column_break_ztqdx",
   "notes",
-  "name1"
+  "name1",
+  "date"
  ],
  "fields": [
   {
@@ -119,11 +120,18 @@
    "fieldname": "email3",
    "fieldtype": "Data",
    "label": "Email3"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-31 09:10:00.155995",
+ "modified": "2023-08-08 10:00:26.113834",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Advertiser",
