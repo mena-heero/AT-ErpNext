@@ -46,7 +46,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Insterted By",
-   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nOther"
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nOther"
   },
   {
    "fieldname": "section_break_lpofw",
@@ -110,7 +110,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-12 09:26:05.146144",
+ "modified": "2023-08-15 09:09:38.258753",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Ads Display",

@@ -1,0 +1,65 @@
+{% extends "templates/at_base.html" %}
+
+{% block title %} Blog {% endblock %}
+{% block content %}
+
+<body class="topics-listing-page" id="top">
+    <main>
+        <header class="site-header d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Homepage</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">All Targeting Blog</li>
+                            </ol>
+                        </nav>
+                        <h2 class="text-white">All Targeting Blog</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center">
+                        <h3 class="mb-4">Get Better Understanding Of Digital Marketing</h3>
+                    </div>
+                    <section class="section-padding ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-12">
+                                    <h3 class="mb-4">Latest Topics</h3>
+                                </div>
+                                
+                                {% for post in frappe.get_all("Topic", filters={}, fields=["cover", "title",  "route","category","read_time"], order_by="creation desc", limit_page_length=3) %}
+                                <div class="col-lg-4 col-md-4 col-12 mt-lg-3">
+                                    <div class="custom-block custom-block-overlay">
+                                        <div class="d-flex flex-column h-100">
+                                            <img src="{{ post.cover }}" class="custom-block-image img-fluid" alt="{{ post.title }}">
+                                            
+                                            <div class="custom-block-overlay-text d-flex">
+                                                <div>
+                                                    <h5 class="text-white mb-2">{{ post.category }}</h5>
+                                                    <p class="text-white">{{ post.title }}</p>
+                                                    <a href="{{ post.route }}" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+                                                </div>
+                                                <span class="badge bg-design rounded-pill ms-auto"> {{post.read_time}}</span>
+                                            </div>
+                                            <div class="section-overlay"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+{% endblock %}

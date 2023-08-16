@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include your custom head content here -->
+    <title>AllTargeting - {% block title %}{% endblock %}</title>
+    <!-- Include your Bootstrap CSS and other CSS files here -->
+    <!-- CSS FILES -->        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link type="text/css" rel="stylesheet" href="/assets/erpnext/dist/css/erpnext-web.bundle.LPQQIZOZ.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/assets/heero/favicon/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                    
+    <link href="/assets/heero/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="/assets/heero/css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="/assets/heero/css/templatemo-topic-listing.css" rel="stylesheet"> 
+
+</head>
+<body>
+    <!-- Frappe/erpnext header and navigation here -->
+    
+    <main>
+        <!-- Include the HTML content from your external Bootstrap template -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- Your Bootstrap navigation content here -->
+        </nav>
+
+        <!-- Your custom content here -->
+        {% block page_content %}
+        {% endblock %}
+    </main>
+
+    <!-- Frappe/erpnext footer and scripts here -->
+    <footer>
+        <!-- Your frappe-specific footer content here -->
+    </footer>
+
+    <!-- Include your Bootstrap JS and other script files here -->
+</body>
+</html>

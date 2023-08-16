@@ -60,7 +60,7 @@
    "fieldname": "inserted_by",
    "fieldtype": "Select",
    "label": "Inserted By",
-   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nNairaa\nShahinda\nOther"
+   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nNairaa\nShahinda\nViola\nOther"
   },
   {
    "default": "0",
@@ -79,7 +79,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-07 09:50:31.677012",
+ "modified": "2023-08-15 09:10:00.908056",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "MCN Data",
