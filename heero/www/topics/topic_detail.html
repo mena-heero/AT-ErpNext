@@ -1,0 +1,21 @@
+{% extends "templates/at_base.html" %}
+{% block title %} {{ topic.title }} {% endblock %}
+{% block content %}
+
+<body class="topic-detail-page" id="top">
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>{{ topic.title }}</h1>
+                        <img src="{{ topic.cover }}" alt="{{ topic.title }}">
+                        <!-- Render other topic details as needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+{% endblock %}

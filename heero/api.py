@@ -38,3 +38,61 @@ def create_customer():
         return {"error": _("Error creating customer: {0}").format(str(e))}
 
 
+
+@frappe.whitelist(allow_guest=True)
+def create_lead_with_message():
+    try:
+        # Extract lead data from the request (you might need to adjust this)
+        data = frappe.request.json
+        lead_name = data.get('name')
+        lead_description = data.get('message')
+        # Add other fields as needed
+        email_id=data.get('email')
+        notes_html=data.get('message')
+        
+        # Create a new lead document
+        lead = frappe.get_doc({
+            "doctype": "Lead",
+            "lead_name": lead_name,
+            "lead_description": lead_description,
+            "email_id":email_id,
+            "notes_html":notes_html
+            # Add other fields here
+        })
+        lead.insert()
+
+        return {"message": "Lead created successfully"}
+    except Exception as e:
+        return {"error": _("Error creating lead: {0}").format(str(e))}
+
+
+@frappe.whitelist()
+def get_topic_detail(topic_route):
+    topic = frappe.get_doc("Topic", {"route": topic_route})
+    return {"topic": topic}
+
+
+@frappe.whitelist(allow_guest=True)
+def lead_at():
+    try:
+        # Extract lead data from the request (you might need to adjust this)
+        data = frappe.request.json
+        lead_name = data.get('name')
+        lead_description = data.get('message')
+        # Add other fields as needed
+        email_id=data.get('email')
+        
+        
+        # Create a new lead document
+        lead = frappe.get_doc({
+            "doctype": "lead-at",
+            "name1": lead_name,
+            "message": lead_description,
+            "email":email_id,
+            
+            # Add other fields here
+        })
+        lead.insert()
+        return {"message": "Thank You for contacting us"}
+    except Exception as e:
+        return {"error": _("Error creating lead: {0}").format(str(e))}

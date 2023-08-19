@@ -1,0 +1,7 @@
+{% extends "templates/at_base.html" %}
+{% block title %} {{ topic.title }} {% endblock %}
+{% block content %}
+<h1>{{ topic.title }}</h1>
+<img src="{{ topic.cover }}" alt="{{ topic.title }}" class="img-fluid">
+<p>{{ topic.content }}</p>
+{% endblock %}

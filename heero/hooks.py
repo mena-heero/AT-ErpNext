@@ -53,6 +53,9 @@ fixtures =["Custom Field"]
 
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
+website_routes = [
+    {"route": "/topics/<route>", "template": "topic.html", "method": "frappe.website.render.render"}
+]
 
 # Jinja
 # ----------

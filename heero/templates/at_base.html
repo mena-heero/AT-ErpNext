@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="description" content="">
-        <meta name="author" content="">      
+        <meta name="author" content="">  
+        {% block meta_block %}
+        {% include "templates/includes/meta_block.html" %}
+        {% endblock %}    
         <title> AllTargting - {% block title%} {% endblock %} </title>
 
         <!-- CSS FILES -->        
@@ -75,7 +78,7 @@
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                                     <li><a class="dropdown-item" href="/influencer">influencer</a></li>
                                     <li><a class="dropdown-item" href="/blog">Blog</a></li>
-                                    <li><a class="dropdown-item" href="/contact">Contact Form</a></li>
+                                    <li><a class="dropdown-item" href="/us/contact">Contact Form</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -157,6 +160,7 @@
                     </div>
                 </div>
             </footer>
+            
             
             <script src="/assets/heero/js/jquery.min.js"></script>
             <script src="/assets/heero/js/bootstrap.bundle.min.js"></script>
