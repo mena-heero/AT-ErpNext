@@ -48,6 +48,7 @@ https://templatemo.com/tm-590-topic-listing
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
+  min-width: 300px;
 }
 
 
@@ -62,6 +63,307 @@ h5,
 h6 {
   color: var(--dark-color);
 }
+.cards-info{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+
+}
+.cards-info:hover{
+  
+  color: #02c5cc;
+  
+ 
+
+  
+
+
+
+}
+
+
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-bg {
+  background-color: var(--section-bg-color);
+}
+
+.section-overlay {
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.section-overlay + .container {
+  position: relative;
+}
+
+.tab-content {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-medium);
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ecf3f2;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  color: var(--p-color);
+  font-family: var(--title-font-family);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-medium);
+  padding: 15px 25px;
+  transition: all 0.3s;
+}
+
+.nav-tabs .nav-link:first-child {
+  margin-right: 20px;
+}
+
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:hover {
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+
+/*---------------------------------------
+  CUSTOM ICON COLOR               
+-----------------------------------------*/
+.custom-icon {
+  color: var(--secondary-color);
+}
+  
+*---------------------------------------
+  influncer BLOCK              
+-----------------------------------------*/
+.profile-block-image {
+  border-radius: var(--border-radius-large);
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.influncer-block {
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.influncer-block:hover {
+  background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+
+.influncer-block-info {
+  display: block;
+  padding: 10px 20px;
+  padding-bottom: 0;
+}
+
+.influncer-block-image-wrap {
+  position: relative;
+  display: block;
+  height: 50%;
+  width: 50%;
+}
+
+
+
+
+.influncer-block-image {
+  border-radius: var(--border-radius-medium);
+  display: block;
+ 
+  object-fit: cover;
+}
+
+.influncer-block-image-detail-page .custom-block-image {
+  width: 100%;
+  height: 212px;
+}
+
+.influncer-block .influncer-block-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.influncer-block-icon-wrap {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.influncer-block-icon-wrap .section-overlay {
+  opacity: 0.25;
+}
+
+.influncer-block-btn-group {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 20px;
+}
+
+.influncer-block-btn-group .influncer-block-icon {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+.influncer-block-icon {
+  background: var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  font-size: var(--p-font-size);
+  color: var(--white-color);
+  text-align: center;
+  width: 32.5px;
+  height: 32.5px;
+  line-height: 32.5px;
+  transition: all 0.3s;
+}
+
+.influncer-block-icon:hover {
+  background: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.influncer-block .influncer-btn {
+  font-size: var(--menu-font-size);
+  padding: 7px 15px;
+}
+
+.influncer-block .influncer-block-info + div .badge {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border-radius: 50px !important;
+  font-size: var(--menu-font-size);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.influncer-block .influncer-block-info + div .badge:hover {
+  background-color: var(--secondary-color);
+}
+
+.influncer-block-full {
+  background-color: var(--section-bg-color);
+  border-color: transparent;
+}
+
+.influncer-block-full:hover {
+  border-color: var(--primary-color);
+}
+
+.influncer-block-full .influncer-block-info {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.influncer-block-full .influncer-block-image {
+  width: 100%;
+  height: 210px;
+}
+
+.influncer-block-full .social-share {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 50px;
+}
+
+.influncer-block-top small {
+  color: var(--p-color);
+  font-family: var(--title-font-family);
+}
+
+.influncer-block-top .badge {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  display: inline-block;
+  vertical-align: middle;
+  height: 26.64px;
+  line-height: 20px;
+}
+
+.influncer-block-bottom a:hover span {
+  color: var(--primary-color);
+}
+
+.influncer-block-bottom a span {
+  font-family: var(--title-font-family);
+  color: var(--p-color);
+  text-transform: uppercase;
+  margin-left: 3px;
+}
+
+.influncer-block-overlay {
+  border-color: transparent;
+  padding: 0;
+}
+
+.influncer-block-overlay .influncer-block-image {
+  margin: auto;
+  width: 100%;
+  height: 210px;
+  transition: all 0.3s;
+}
+
+.influncer-block-overlay:hover .influncer-block-image {
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.influncer-block-overlay-info {
+  padding: 15px 20px 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 h1,
 h2,
@@ -132,6 +434,117 @@ b,
 strong {
   font-weight: var(--font-weight-bold);
 }
+
+
+/*---------------------------------------
+  CAROUSEL        
+-----------------------------------------*/
+.hero-section {
+  background-image: url('../images/templatemo-wave-banner.jpg'), linear-gradient(#127456, #FFFFFF);
+  background-repeat: no-repeat;
+  background-size: 108% 76%;
+  background-position: top;
+  padding-top: 200px;
+}
+
+.owl-carousel {
+  text-align: center;
+
+
+}
+
+.owl-carousel-image {
+  display: block;
+}
+
+.owl-carousel .owl-item .owl-carousel-verified-image {
+  display: inline-block;
+  width: 30px;
+  height: 5%;
+  position: relative;
+  right: 5px;
+}
+
+.verified-image {
+  display: inline-block;
+  width: 20px;
+  height: 10%;
+}
+
+.owl-carousel .owl-item {
+  opacity: 0.25;
+
+}
+
+.owl-carousel .owl-item.active.center {
+  opacity:1;
+  border: 1px solid #03ac95;
+  border-radius: var(--border-radius-medium);
+}
+
+.owl-carousel-info-wrap {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.owl-carousel-info {
+  background-color: var(--section-bg-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.badge {
+  background-color: var(--custom-btn-bg-color);
+  font-family: var(--title-font-family);
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  padding-bottom: 5px;
+}
+
+.owl-carousel-info-wrap .social-share,
+.team-thumb .social-share {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.owl-carousel-info-wrap .social-icon,
+.team-thumb .social-icon {
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.owl-carousel .owl-item.active.center .owl-carousel-info-wrap:hover .social-icon,
+.team-thumb:hover .social-icon {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.owl-carousel-info-wrap .social-icon-item,
+.owl-carousel-info-wrap .social-icon-link,
+.team-thumb .social-icon-item,
+.team-thumb .social-icon-link {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.owl-carousel-info-wrap .social-icon-link {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
 
 
 /*---------------------------------------
@@ -385,6 +798,29 @@ strong {
   padding: 10px;
 }
 
+
+
+.card{
+background-color: hwb(0 100% 0% / 0.856);
+width: 50%;
+height: 30%;
+text-align: center;
+margin: auto;
+min-width: 250px;
+
+
+}
+.bg-card{
+ 
+  background-image: linear-gradient(360deg,#ffffff00  0%, #010203 100%);
+  
+
+}
+
+
+
+
+
 .navbar-nav .nav-link {
   display: inline-block;
   color: var(--white-color);
@@ -561,11 +997,11 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  position: relative;
+  background-image: linear-gradient(360deg,#ffffff00  0%, #13547a 100%);
+ 
   overflow: hidden;
-  padding-top: 150px;
-  padding-bottom: 150px;
+ 
+ 
 }
 
 .hero-section .input-group {
@@ -713,8 +1149,17 @@ strong {
 .bg-education {
   background-color: #00BFA6;
 }
+.bg-iful-col{
+  background-color: #1b2948;
+}
 
 
+.btn-outline-light:hover{
+text-decoration: solid;
+font-size: 11pt;
+font-weight: 1000;
+
+}
 /*---------------------------------------
   TOPICS               
 -----------------------------------------*/
@@ -780,7 +1225,12 @@ blockquote {
   background-color: var(--secondary-color);
   color: var(--white-color);
 }
+.bg-infl{
+  background-image:url(../images/infuback.webp);
+  background-size: 100%;
 
+ 
+}
 .page-item:first-child .page-link {
   margin-right: 10px;
 }
@@ -1001,15 +1451,15 @@ blockquote {
 }
 .btn-infu{
 
-background: linear-gradient(155.39deg,#00b4ff -32.53%,#00f100 72.42%);
+background: linear-gradient(155.39deg,#00b3ff62 -32.53%,hsla(167, 100%, 47%, 0.205) 72.42%);
     margin-bottom: 24px;
    letter-spacing: 2px;
     text-transform: uppercase;
-    display: inline-block;
+   
     border-radius: 1.25rem;
     padding: 2px;
     margin-top: 0;
-    box-sizing: border-box;
+    box-sizing: 100%;
     text-align: center;
    
 
@@ -1034,6 +1484,13 @@ background: linear-gradient(155.39deg,#00b4ff -32.53%,#00f100 72.42%);
     left: 0;
 }
 
+
+.img-in{
+  width: 200px;
+  height: 200px;
+ 
+  
+}
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {
   background: var(--custom-btn-bg-hover-color);
