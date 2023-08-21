@@ -82,6 +82,104 @@ h6 {
 }
 
 
+
+.line-title {
+  position: relative;
+}
+
+.line-title::after {
+  content: "";
+  background: var(--section-bg-color);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background-color: #E7E7E7;
+}
+
+.line {
+  background: var(--section-bg-color);
+  border-radius: var(--border-radius-large);
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+  padding: 10px 25px;
+  background-color: rgba(255, 248, 248, 0.98);
+}
+
+
+
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+  
+    li {
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+
+    }
+
+    i {
+        color: #fff;
+        position: absolute;
+        top: 21px;
+        left: 21px;
+        transition: all $timing ease-out;
+    }
+
+    a {
+        display: inline-block;
+      
+        &:before {
+            @include transformScale();
+            content: " ";
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, $iconColor, $accent);
+            transition: all $timing ease-out;
+        }
+        
+        &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+        }
+        
+        &:hover i {
+            @include transformScale(2.2);
+            color: $iconColor;
+            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+        }
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
@@ -153,7 +251,9 @@ h6 {
   color: var(--secondary-color);
 }
   
-*---------------------------------------
+
+
+/*---------------------------------------
   influncer BLOCK              
 -----------------------------------------*/
 .profile-block-image {
@@ -439,7 +539,7 @@ strong {
 /*---------------------------------------
   CAROUSEL        
 -----------------------------------------*/
-.hero-section {
+.hero-section-1 {
   background-image: url('../images/templatemo-wave-banner.jpg'), linear-gradient(#127456, #FFFFFF);
   background-repeat: no-repeat;
   background-size: 108% 76%;
@@ -737,8 +837,8 @@ strong {
 -----------------------------------------*/
 .site-header {
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  padding-top: 150px;
-  padding-bottom: 80px;
+
+  
 }
 
 .site-header .container {
@@ -996,12 +1096,12 @@ min-width: 250px;
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
-.hero-section {
-  background-image: linear-gradient(360deg,#ffffff00  0%, #13547a 100%);
- 
-  overflow: hidden;
- 
- 
+.hero-section {	
+  background-image: linear-gradient(0deg, #ffffff 0%, #80d0c7 100%);	
+  position: relative;	
+  overflow: hidden;	
+  padding-top: 150px;	
+  padding-bottom: 150px;	
 }
 
 .hero-section .input-group {
@@ -1029,13 +1129,20 @@ min-width: 250px;
   color: var(--white-color);
   max-width: 150px;
 }
+.header-infl{
+  padding-top: 150px;
+}
 
+.img-article{
+ 
+  background-image: url(../images/businesswoman-using-tablet-analysis.webp);
 
+}
 /*---------------------------------------
   TOPICS              
 -----------------------------------------*/
 .featured-section {
-  background-color: var(--secondary-color);
+  background-color: #fff;
   border-radius: 0 0 100px 100px;
   padding-bottom: 100px;
 }
@@ -1400,6 +1507,7 @@ blockquote {
 }
 
 
+
 /*---------------------------------------
   SUBSCRIBE FORM               
 -----------------------------------------*/
@@ -1569,7 +1677,7 @@ background: linear-gradient(155.39deg,#00b3ff62 -32.53%,hsla(167, 100%, 47%, 0.2
 
 .site-footer-link {
   color: var(--secondary-color);
-  font-size: var(--copyright-font-size);
+  font-size: 10pt;
   font-weight: var(--font-weight-medium);
   line-height: normal;
 }

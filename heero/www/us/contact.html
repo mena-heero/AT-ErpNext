@@ -1,152 +1,173 @@
 {% extends "templates/at_base.html" %}
 
-{% block title%} Contact Us {% endblock %}
 
+{% block title%} Contact Us {% endblock%}
+ 
+ 
 {% block content%}
-<!-- header start here------------------------/-->
 
-<header class="site-header d-flex flex-column justify-content-center align-items-center">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 col-12">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact Form</li>
-                    </ol>
-                </nav>
-                <h2 class="text-white">Contact Form</h2>
-            </div>
-        </div>
+<header
+  class="site-header d-flex flex-column justify-content-center align-items-center header-infl"
+>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 col-12">
+        <nav aria-label="breadcrumb ">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Homepage</a></li>
+
+            <li class="breadcrumb-item active" aria-current="page">
+              <strong> Contact AllTargeting</strong>
+            </li>
+          </ol>
+        </nav>
+
+        <h2 class="text-white">We Are Here To Help</h2>
+      </div>
     </div>
+  </div>
 </header>
-<!-- form start here------------------------/-->
 
 <section class="section-padding section-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-12">
-                <h3 class="mb-4 pb-2">We'd love to hear from you</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-12">
+        <h3 class="mb-4 pb-2">We'd love to hear from you</h3>
+      </div>
+
+      <div class="line-title mb-4">
+        <h4 class="line">Contact us</h4>
+      </div>
+
+      <div class="col-lg-6 col-12 mx-auto mt-lg-0">
+        <img src="/assets/heero/images/contact.webp" style="width: 100%" />
+
+        <h5 class="mt-4 mb-2"></h5>
+      </div>
+
+      <div class="col-lg-6 col-12">
+        <form id="contact-form" class="custom-form contact-form" role="form">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Name"
+                  required=""
+                />
+
+                <label for="floatingInput">Name</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-floating">
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  class="form-control"
+                  placeholder="phone"
+                  required=""
+                />
+
+                <label for="floatingInput">phone</label>
+              </div>
             </div>
 
             <div class="col-lg-12 col-12">
-                <form id="contact-form" class="custom-form contact-form" role="form">
+              <div class="form-floating">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  pattern="[^ @]*@[^ @]*"
+                  class="form-control"
+                  placeholder="Email address"
+                  required=""
+                />
 
-                    
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-floating">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Name"
-                                    required="">
-
-                                <label for="floatingInput">Name</label>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-floating">
-                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                    class="form-control" placeholder="Email address" required="">
-
-                                <label for="floatingInput">Email address</label>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-12">
-                            <div class="form-floating">
-                                <input type="text" name="subject" id="subject" class="form-control"
-                                    placeholder="Subject" required="">
-
-                                <label for="floatingInput">Subject</label>
-                            </div>
-
-                            <div class="form-floating">
-                                <textarea class="form-control" id="message" name="message"
-                                    placeholder="Tell me about the project"></textarea>
-
-                                <label for="floatingTextarea">Tell me about the project</label>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 ms-auto">
-                            <button type="submit" class="form-control" id="submit-button">Submit</button>
-                        </div>
-                    </div>
-                </form>
+                <label for="floatingInput">Email address</label>
+              </div>
             </div>
-        </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Tell us any inquiry"
+              ></textarea>
+
+              <label for="floatingTextarea">Tell us any inquiry</label>
+            </div>
+
+            <div class="col-lg-4 col-12 ms-auto">
+              <button type="submit" class="form-control" id="submit-button">
+                Send
+              </button>
+            </div>
+          </div>
+          {#
+          <div class="line-title m-4">
+            <h4 class="line">Reach Us Here If You Prefer</h4>
+          </div>
+
+          <div class="mb-4 text-center social-icons">
+            <a class="bi bi-facebook fs-2 p-2 social-btn"></a>
+
+            <a class="bi bi-youtube fs-2 p-2 social-btn"></a>
+
+            <a class="bi bi-instagram fs-2 p-2 social-btn"></a>
+
+            <a class="bi bi-linkedin fs-2 p-2 social-btn"></a>
+          </div>
+          #}
+        </form>
+      </div>
     </div>
+  </div>
 </section>
-<!-- contact us------------------------/-->
-<div class="row section-padding ">
-    <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
-                <h4 class="mb-3">Head office</h4>
-                <p>Egypt &amp;, Laxor</p>
-                <hr>
-                <p class="d-flex align-items-center mb-1">
-                    <span class="me-2">Phone</span>
-                    <a href="tel: +201063588999" class="site-footer-link">+201063588999</a>
-                </p>
-                <p class="d-flex align-items-center">
-                    <span class="me-2">Email</span>
-                    <a href="mailto:info@company.com" class="site-footer-link">info@alltargeting.com</a>
-                </p>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-12 p-2 mx-auto">
-                <h4 class="mb-3">Dubai office</h4>
-                <p>Level 1 ,boulevard Central ,Downtown DUBAI Souq Albahar c3,United Arab Emirates</p>
-                <hr>
-                <p class="d-flex align-items-center mb-1">
-                    <span class="me-2">Phone</span>
-                    <a href="tel: +971561052254" class="site-footer-link">+971561052254</a>
-                </p>
-                <p class="d-flex align-items-center">
-                    <span class="me-2">Email</span>
-                    <a href="mailto:info@company.com" class="site-footer-link">info@alltargeting.com</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
 <script>
-    document.getElementById("submit-button").addEventListener("click", submitContactForm);
+  document
+    .getElementById("submit-button")
+    .addEventListener("click", submitContactForm);
 
-    function submitContactForm() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
+  function submitContactForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
 
-        var requestData = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        };
+    var requestData = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    };
 
-        fetch("/api/method/heero.api.lead_at", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(requestData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data); // Log the response for troubleshooting
-            if (data.message) {
-                alert("Form submitted successfully");
-            } else {
-                alert("Error submitting form");
-            }
-        })
-        .catch(error => {
-            console.error("Fetch Error:", error);
-        });
-    }
+    fetch("/api/method/heero.api.lead_at", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(requestData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data); // Log the response for troubleshooting
+        if (data.message) {
+          alert("Form submitted successfully");
+        } else {
+          alert("Error submitting form");
+        }
+      })
+      .catch((error) => {
+        console.error("Fetch Error:", error);
+      });
+  }
 </script>
+
 {% endblock %}

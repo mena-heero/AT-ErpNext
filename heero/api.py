@@ -80,7 +80,8 @@ def lead_at():
         lead_name = data.get('name')
         lead_description = data.get('message')
         # Add other fields as needed
-        email_id=data.get('email')
+        email=data.get('email')
+        phone=data.get('phone')
         
         
         # Create a new lead document
@@ -88,7 +89,8 @@ def lead_at():
             "doctype": "lead-at",
             "name1": lead_name,
             "message": lead_description,
-            "email":email_id,
+            "email":email,
+            "phone":phone,
             
             # Add other fields here
         })
