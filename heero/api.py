@@ -98,3 +98,31 @@ def lead_at():
         return {"message": "Thank You for contacting us"}
     except Exception as e:
         return {"error": _("Error creating lead: {0}").format(str(e))}
+
+
+@frappe.whitelist(allow_guest=True)
+def flagedu_lead():
+    try:
+        # Extract lead data from the request (you might need to adjust this)
+        data = frappe.request.json
+        lead_name = data.get('name')
+        lead_description = data.get('message')
+        # Add other fields as needed
+        email=data.get('email')
+        phone=data.get('phone')
+        
+        
+        # Create a new lead document
+        lead = frappe.get_doc({
+            "doctype": "Flagedu Lead",
+            "name1": lead_name,
+            "message": lead_description,
+            "email":email,
+            "phone":phone,
+            
+            # Add other fields here
+        })
+        lead.insert()
+        return {"message": "Thank You for contacting us"}
+    except Exception as e:
+        return {"error": _("Error creating lead: {0}").format(str(e))}

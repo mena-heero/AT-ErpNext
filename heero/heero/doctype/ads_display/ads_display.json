@@ -10,20 +10,22 @@
  "engine": "InnoDB",
  "field_order": [
   "website",
-  "date",
+  "date2",
   "insterted_by",
   "contacted",
   "section_break_lpofw",
   "email",
   "email2",
+  "stats",
   "column_break_dpkpm",
   "phone",
   "phone2",
+  "name1",
   "section_break_wyil4",
   "full_contacts",
   "column_break_ztqdx",
   "notes",
-  "name1"
+  "date"
  ],
  "fields": [
   {
@@ -49,8 +51,10 @@
    "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nOther"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_lpofw",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
   },
   {
    "fieldname": "email",
@@ -77,8 +81,10 @@
    "label": "Phone2"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_wyil4",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "More Info"
   },
   {
    "fieldname": "full_contacts",
@@ -106,11 +112,23 @@
    "fieldname": "name1",
    "fieldtype": "Data",
    "label": "Name"
+  },
+  {
+   "fieldname": "stats",
+   "fieldtype": "Data",
+   "label": "Stats"
+  },
+  {
+   "fieldname": "date2",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-15 09:09:38.258753",
+ "modified": "2023-08-31 08:25:53.610033",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Ads Display",

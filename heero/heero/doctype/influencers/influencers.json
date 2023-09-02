@@ -29,6 +29,7 @@
   "engagement20",
   "column_break_80lb7",
   "chat_screens",
+  "stats",
   "whatsapp_group_name",
   "inserted_by",
   "photo",
@@ -40,15 +41,12 @@
   "channel_link",
   "tiktok_followers",
   "snapchat_followers",
-  "facebook_followers",
-  "stats",
-  "indicator_color"
+  "facebook_followers"
  ],
  "fields": [
   {
    "fieldname": "channel_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Channel Name ",
    "reqd": 1,
    "unique": 1
@@ -68,6 +66,7 @@
   {
    "fieldname": "geo",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Geo",
    "options": "GCC\nEgypt\nMorocco\nIraq\nTurkey\nTunis\nSyria\nJordan\nAlgeria\nLebonan\nCanda\nUSA\nSpain\nAustria\nIsrael\nSudan\nindia\nHoland\nGermany\nOman\nlibya"
@@ -75,6 +74,7 @@
   {
    "fieldname": "subscribers",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Subscribers"
   },
   {
@@ -84,6 +84,7 @@
   {
    "fieldname": "platform",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Platform",
    "options": "Youtube\nInstagram\nInsta+ Tiktok+ Face\nSnapChat\ninsta+tiktok+youtube\nINSTA+SNAP\nyoutube+insta\nsnap+youtube\nface+Youtube\nyoutube+tiktok\nTiktok\nyoutube+face+tiktok\nFacebook\nyoutube+insta+face\nInsta+Tiktok\nFace+Insta\ninst+tiktok+snap\nyoutube+insta+face+tiktok\nFace+Tiktok"
@@ -101,6 +102,7 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
    "options": "Cancel\nFollow Up\nNew"
@@ -112,6 +114,7 @@
    "options": "Paid\nCommisiion"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_2yanu",
    "fieldtype": "Section Break",
    "label": "Other Data"
@@ -180,7 +183,6 @@
   {
    "fieldname": "subcs",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "YT Subscribes",
    "read_only": 1
   },
@@ -191,6 +193,7 @@
    "read_only": 1
   },
   {
+   "collapsible": 1,
    "fieldname": "influencer_channels_section",
    "fieldtype": "Section Break",
    "label": "Channels"
@@ -202,6 +205,7 @@
    "options": "Influencer Channels"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_mdvjg",
    "fieldtype": "Section Break",
    "label": "Links"
@@ -232,19 +236,12 @@
    "fieldtype": "Data",
    "label": "Facebook Followers",
    "read_only": 1
-  },
-  {
-   "fieldname": "indicator_color",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "indicator_color",
-   "read_only": 1
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-15 09:02:07.152013",
+ "modified": "2023-08-24 14:32:17.119099",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Influencers",
