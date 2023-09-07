@@ -1,8 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{DD}-{MM}-{email}-{#####}",
- "creation": "2023-09-06 16:05:13.570419",
+ "autoname": "field:email",
+ "creation": "2023-09-06 16:33:47.296147",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,9 +12,7 @@
   "email",
   "phone",
   "message",
-  "source",
-  "naming_series",
-  "test"
+  "source"
  ],
  "fields": [
   {
@@ -44,26 +42,15 @@
    "fieldname": "source",
    "fieldtype": "Data",
    "label": "Source"
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Data",
-   "label": "Naming series",
-   "read_only": 1
-  },
-  {
-   "fieldname": "test",
-   "fieldtype": "Data",
-   "label": "test"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-06 16:17:20.380958",
+ "modified": "2023-09-06 16:33:47.296147",
  "modified_by": "Administrator",
- "module": "AllTargeting",
- "name": "Flagedu-Lead",
- "naming_rule": "Expression",
+ "module": "Heero",
+ "name": "Alltargeting Leads",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

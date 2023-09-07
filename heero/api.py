@@ -86,7 +86,7 @@ def lead_at():
         
         # Create a new lead document
         lead = frappe.get_doc({
-            "doctype": "lead-at",
+            "doctype": "Alltargeting Leads",
             "name1": lead_name,
             "message": lead_description,
             "email":email,
@@ -94,7 +94,7 @@ def lead_at():
             
             # Add other fields here
         })
-        lead.insert()
+        lead.insert(ignore_permissions=True)
         return {"message": "Thank You for contacting us"}
     except Exception as e:
         return {"error": _("Error creating lead: {0}").format(str(e))}
@@ -114,7 +114,7 @@ def flagedu_lead():
         
         # Create a new lead document
         lead = frappe.get_doc({
-            "doctype": "Flagedu Lead",
+            "doctype": "Flagedu-Lead",
             "name1": lead_name,
             "message": lead_description,
             "email":email,
