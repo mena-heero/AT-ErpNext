@@ -11,11 +11,11 @@ https://templatemo.com/tm-590-topic-listing
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #043755;
+  --primary-color:                #069db8;
   --secondary-color:              #64cec1;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #80d0c7;
-  --custom-btn-bg-hover-color:    #13547a;
+  --custom-btn-bg-hover-color:    #057996;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
@@ -55,6 +55,8 @@ body {
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
+
+
 
 h2,
 h3,
@@ -135,6 +137,8 @@ h6 {
         transition: all $timing ease-out;
     }
 
+  
+    
     a {
         display: inline-block;
       
@@ -165,12 +169,6 @@ h6 {
     }
   
 }
-
-
-
-
-
-
 
 
 
@@ -284,6 +282,9 @@ h6 {
   padding: 10px 20px;
   padding-bottom: 0;
 }
+
+
+
 
 .influncer-block-image-wrap {
   position: relative;
@@ -600,6 +601,7 @@ strong {
 }
 
 .badge {
+  
   background-color: var(--custom-btn-bg-color);
   font-family: var(--title-font-family);
   border-radius: var(--border-radius-large);
@@ -658,10 +660,78 @@ strong {
   width: 40px; 
   
   }
+.text-shad{
+  text-shadow: 2px 2px #85e9e4;
+}
+.text-shad2{
+  text-shadow: 2px 2px #000000;
+}
+
   .text-color{
     color:#10BEB6;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .testbutton{
+ 
     width: 150px;
   height:50px;
   border-radius:180px;
@@ -673,7 +743,7 @@ strong {
 }
 
 .testbutton:before {
-  content:'';
+  content:'learn more';
   z-index:1;
   position:absolute;
   display:block;
@@ -695,7 +765,6 @@ strong {
 }
 
 .testbutton:after {
-  content:'Learn More';
   text-align:center;
   line-height:40px;
   font-size:18px;
@@ -1133,12 +1202,17 @@ min-width: 250px;
 .header-infl{
   padding-top: 150px;
 }
-
+.img-creator{
+  width: 100px;
+}
 .img-article{
  
   background-image: url(../images/businesswoman-using-tablet-analysis.webp);
 
+
+  
 }
+
 /*---------------------------------------
   TOPICS              
 -----------------------------------------*/
@@ -1259,6 +1333,10 @@ min-width: 250px;
 }
 .bg-iful-col{
   background-color: #1b2948;
+}
+
+.text-shadow{
+  text-shadow: 2px 2px #03c0b069;
 }
 
 
@@ -1560,7 +1638,7 @@ blockquote {
 }
 .btn-infu{
 
-background: linear-gradient(155.39deg,#00b3ff62 -32.53%,hsla(167, 100%, 47%, 0.205) 72.42%);
+background: linear-gradient(155.39deg,#ff0000be -32.53%,hsla(167, 100%, 47%, 0.205) 72.42%);
     margin-bottom: 24px;
    letter-spacing: 2px;
     text-transform: uppercase;
@@ -1568,7 +1646,7 @@ background: linear-gradient(155.39deg,#00b3ff62 -32.53%,hsla(167, 100%, 47%, 0.2
     border-radius: 1.25rem;
     padding: 2px;
     margin-top: 0;
-    box-sizing: 100%;
+    box-sizing:content-box;
     text-align: center;
    
 

@@ -6,12 +6,135 @@
 {% block content %}
 
 <!--start header -------------------------------------------------------------------------->
+
+
+
+
+<section class="section main-banner  " id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+    <source src="/assets/heero/images/Network.webm" type="video/webm" />
+    </video>
+    
+    
+    <div class="video-overlay header-text d-flex justify-content-center align-items-center">
+    <div class="container ">
+    <div class="row text-center">
+    <div class="col-lg-12">
+    <div class="caption">
+    <h1 class="custom-icon  text-center text-g2 ">AllTargeting
+       </h1>
+    <h3 class="text-light text-shadow"> The Solution for Brands & Creators</h3>
+    <h5  class="custom-icon text-g2">  Unleash Your Brand's Potential </h5>
+    <p  class="text-light">
+        Harness the authority of influencers to boost conversions and drive sales like never before.
+       </p>
+    <div class="main-button-red">
+    <div class="scroll-to-section "><a href="#" class="custom-btn2">Join Us Now!</a></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <style>
+        .text-g2 {
+            background: -webkit-linear-gradient(#02a187, #048524);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;}
+    
+    
+    
+    .main-banner {
+    position: relative;
+    max-height: 60%;
+    overflow: hidden;
+    margin-bottom: -7px;}
+    
+    
+    .video-overlay {
+    position: absolute;
+    background-color: rgba(42, 52, 58, 0.733);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height:100vh ;
+    }
+    video{
+        height:100vh ;  
+    }
+    
+    .custom-btn2 {
+     
+        background: -webkit-linear-gradient(#03acc2, #048524);
+        border: 2px solid transparent;
+        border-radius: var(--border-radius-large);
+        color: var(--white-color);
+        font-size: var(--btn-font-size);
+        font-weight: var(--font-weight-semibold);
+        line-height: normal;
+        transition: all 0.3s;
+        padding: 10px 20px;
+      
+      }
+      
+      .custom-btn2:hover {
+        background:  -webkit-linear-gradient( #04bd3270 ,#03cee9a1);
+        color: var(--white-color);
+      }
+      
+      .custom-border-btn2 {
+        background: transparent;
+        border: 2px solid var(--custom-btn-bg-color);
+        color: var(--custom-btn-bg-color);
+      }
+      
+      .custom-border2-btn:hover {
+        background: var(--custom-btn-bg-color);
+        border-color: transparent;
+        color: var(--white-color);
+      }
+      
+      .custom-btn-bg-white2 {
+        border-color: var(--white-color);
+        color: var(--white-color);
+      }
+      
+    
+  
+    </style>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
     <div class="container">
         <div class="row">
 
             <div class="col-lg-8 col-12 mx-auto">
-                <h1 class="text-white text-center">AllTargeting </h1>
+                <h1 class="text-white text-center ">AllTargeting </h1>
 
                 <h5 class="text-center">The Solution for Brands & Creators</h5>
 
@@ -32,12 +155,14 @@
         </div>
     </div>
 </section>
-
+-->
 
 <section class="featured-section">
     <div class="container">
         <div class="row justify-content-center">
 
+            <h3 class="text-light text-shadow text-center ">Turn Audiences into Advocates</h3>
+<!--
             <div class="col-lg-4 col-12 mb-4 mb-lg-0">
                 <div class="custom-block bg-white shadow-lg">
                     <a href="#">
@@ -60,44 +185,30 @@
                     </a>
                 </div>
             </div>
-
-            <div class="col-lg-6 col-12">
+-->
+            <div class="col-lg-3 col-md-4 col-12  m-4">
                 <div class="custom-block custom-block-overlay">
                     <div class="d-flex flex-column h-100">
-                        <img src="/assets/heero/images/businesswoman-using-tablet-analysis.webp"
+                        <img src="/assets/heero/images/businesswoman-using-tablet-analysis copy.webp"
                             class="custom-block-image img-fluid" alt="">
 
                         <div class="custom-block-overlay-text d-flex">
                             <div>
-                                <h5 class="text-white mb-2">Turn Audiences into Advocates</h5>
+
 
                                 <p class="text-white">
                                 <ul>
                                                                     
-                                    <li class="text-light"><b>One-Stop Solution:</b> From influencer partnerships to fine-tuned strategies, we've got it all. No need to look elsewhere for your digital growth needs.</li>
-                                    <li class="text-light"><b>Proven Success:</b> We've been there, done that. Our 8-year journey speaks volumes about our expertise in influencer marketing.</li>
+                                    
                                     <li class="text-light"><b>Precision Targeting: </b>We know how to make your brand stand out. Our strategies are finely tuned to hit the bullseye of your audience.</li>
                                 </ul>
                                 </p>
-
-
                             </div>
                         </div>
 
-                        <div class="social-share d-flex">
-                            <p class="text-white me-4">Share:</p>
-
-                            <ul class="social-icon">
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-facebook"></a>
-                                </li>
-
-                            </ul>
-                            <a href="#" class="btn custom-btn p-t-2">Learn More</a>
+                        <div class="social-share d-flex justify-content-end ">
+                           
+                           <!-- <a href="#" class="btn custom-btn p-t-2">Learn More</a>-->
                         </div>
 
                         <div class="section-overlay"></div>
@@ -106,8 +217,113 @@
                 </div>
 
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-lg-3  col-md-4 col-12  m-4">
+                <div class="custom-block custom-block-overlay">
+                    <div class="d-flex flex-column h-100">
+                        <img src="/assets/heero/images/businesswoman-using-tablet-analysis copy 2.webp"
+                            class="custom-block-image img-fluid" alt="">
+
+                        <div class="custom-block-overlay-text d-flex">
+                            <div>
+                       
+
+                                <p class="text-white">
+                                <ul>
+                                                                    
+                                   
+                                    <li class="text-light"><b>Proven Success :</b>
+                                    
+                                         We've been there, done that. Our 8-year journey speaks volumes about our expertise in influencer marketing.</li>
+                                  
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="social-share d-flex justify-content-end ">
+                           
+                         <!--   <a href="#" class="btn custom-btn p-t-2">Learn More</a> -->
+                        </div>
+
+                        <div class="section-overlay"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="col-lg-3 col-md-4 col-12   m-4">
+                <div class="custom-block custom-block-overlay">
+                    <div class="d-flex flex-column h-100">
+                        <img src="/assets/heero/images/businesswoman-using-tablet-analysis.webp"
+                            class="custom-block-image img-fluid" alt="">
+
+                        <div class="custom-block-overlay-text d-flex">
+                            <div>
+                              
+
+                                <p class="text-white">
+                                <ul>
+                                                                    
+                                    <li class="text-light"><b>One-Stop Solution:</b> From influencer partnerships to fine-tuned strategies, we've got it all. No need to look elsewhere for your digital growth needs.</li>
+                                 
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="social-share d-flex justify-content-end ">
+                           
+                      <!--     <a href="#" class="btn custom-btn p-t-2">Learn More</a>-->
+                        </div>
+
+                        <div class="section-overlay"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
         </div>
 </section>
+
+
+
+
+
+
+
+
+
+
 <!--start section networks-------------------------------------------------------------------------->
 
 
@@ -134,27 +350,38 @@
 
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="marketing-tab" data-bs-toggle="tab"
-                        data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="marketing-tab-pane"
+                        data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="Healthcare-tab-pane"
                         aria-selected="false">Healthcare and Medicine</button>
                 </li>
 
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane"
-                        type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">Technology</button>
+                        type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">Finance</button>
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-tab-pane"
+                    <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#Education-tab-pane"
                         type="button" role="tab" aria-controls="music-tab-pane"
-                        aria-selected="false">Technology</button>
+                        aria-selected="false">Education & Teaching</button>
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="education-tab" data-bs-toggle="tab"
-                        data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane"
-                        aria-selected="false">Education & Teaching
-</button>
+                    <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#Religion-tab-pane"
+                        type="button" role="tab" aria-controls="music-tab-pane"
+                        aria-selected="false">Religion</button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#Gaming-tab-pane"
+                        type="button" role="tab" aria-controls="music-tab-pane"
+                        aria-selected="false">Gaming</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#food"
+                        type="button" role="tab" aria-controls="music-tab-pane"
+                        aria-selected="false">Food</button>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -166,20 +393,21 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel"
                         aria-labelledby="design-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-7 col-md-7 col-12 mb-4 mb-lg-0 ">
                                 <div class="custom-block bg-white shadow-lg">
                                     <a href="influencer.html">
-                                        <div class="d-flex">
+                                        <div class=" d-flex ">
                                             <div>
                                                 <h5 class="mb-2">Fashion & Beauty</h5>
 
-                                                <p class="mb-0">Whether you’re providing accessories, clothing, or beauty products, our fashion influencers can promote it for you and achieve the maximum possible reach on social media.
+                                                <p class="mb-0">
+                                                    Whether you’re providing accessories, clothing, or beauty products, our fashion influencers can promote it for you and achieve the maximum possible reach on social media.
 
                                                 </p>
                                             </div>
 
-                                            <span class="badge bg-design rounded-pill ms-auto">13</span>
+                                            <span class="badge bg-design rounded-pill ms-auto"><i class="bi bi-bookmark-star-fill"></i></span>
                                         </div>
 
                                         <img src="/assets/heero/images/topics/undraw_jewelry_iima.svg"
@@ -187,105 +415,94 @@
                                     </a>
                                 </div>
                             </div>
-                            <!-- Health and wellness -------------------------------------------------------------------------->
-                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="custom-block bg-white shadow-lg">
-                                    <a href="influencer.html">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2">Healthcare and Medicine</h5>
-
-                                                <p class="mb-0">Do you provide medical or healthcare you need to promote? No problem. Our influencers can do it with ease, as they share their experience regarding nutrition, fitness, mental health, …etc.
-</p>
-                                            </div>
-
-                                            <span class="badge bg-design rounded-pill ms-auto">10</span>
-                                        </div>
-
-                                        <img src="/assets/heero/images/topics/hea and  well.svg"
-                                            class="custom-block-image img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Medical-------------------------------------------------------------------------->
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="custom-block bg-white shadow-lg">
-                                    <a href="influencer.html">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2">Technology</h5>
-
-                                                <p class="mb-0">From Smartphones & PCs to different accessories and set-ups, you can entrust the success of your campaign to our most professional and famous honest network of tech- influencers.
-</p>
-                                            </div>
-
-                                            <span class="badge bg-design rounded-pill ms-auto">100</span>
-                                        </div>
-
-                                        <img src="/assets/heero/images/topics/undraw_medicine_b-1-ol.svg"
-                                            class="custom-block-image img-fluid" alt="ysdsd">
-                                    </a>
-                                </div>
-                            </div>
+                           
+                         
+                           
                         </div>
                     </div>
-                    <!--start section Education -------------------------------------------------------------------------->
-                    <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab"
+                    <!--start section Healthcare -------------------------------------------------------------------------->
+                    <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="Healthcare-tab"
                         tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-7 col-md-7 col-12 mb-4 mb-lg-3">
                                 <div class="custom-block bg-white shadow-lg">
                                     <a href="influencer.html">
                                         <div class="d-flex">
                                             <div>
-                                                <h5 class="mb-2">Technology</h5>
+                                                <h5 class="mb-2">Healthcare and Medicine </h5>
 
-                                                <p class="mb-0"> From Smartphones & PCs to different accessories and set-ups, you can entrust the success of your campaign to our most professional and famous honest network of tech- influencers.
+                                                <p class="mb-0"> Do you provide medical or healthcare you need to promote? No problem. Our influencers can do it with ease, as they share their experience regarding nutrition, fitness, mental health, …etc.
 </p>
                                             </div>
 
-                                            <span class="badge bg-advertising rounded-pill ms-auto">30</span>
+                                            <span class="badge bg-education  rounded-pill ms-auto"><i class="bi bi-bookmark-star-fill"></i></span>
                                         </div>
 
-                                        <img src="/assets/heero/images/topics/undraw_design_community_rcft.svg"
+                                        <img src="/assets/heero/images/health.svg"
                                             class="custom-block-image img-fluid" alt="">
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                            </div></div>
+
+                            
+                    <!--start section finance -------------------------------------------------------------------------->
+                    <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab"
+                        tabindex="0">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-7 col-md-7 col-12 mb-4 mb-lg-0">
+                                <div class="custom-block bg-white shadow-lg">
+                                    <a href="influencer.html">
+                                        <div class="d-flex">
+                                            <div>
+                                                <h5 class="mb-2">Financial experts</h5>
+
+                                                <p class="mb-0">Different financial aspects (Investment Strategies, Trading, Managing Expenses, Market Predictions, Personal finance, …etc.) urge for an expert and authentic promoter. Choose one from our list of mega-financial influencers.  
+
+                                                </p>
+                                            </div>
+
+                                            <span class="badge bg-finance rounded-pill ms-auto"><i class="bi bi-bookmark-star-fill"></i></span>
+                                        </div>
+
+                                        <img src="/assets/heero/images/topics/undraw_projections_re_ulc6 (1).svg"
+                                            class="custom-block-image img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+           
+                 
+
+                    <!--start section Education------------------------------------------------------------------------->
+                    <div class="tab-pane fade" id="Education-tab-pane" role="tabpanel" aria-labelledby="Education-tab"
+                        tabindex="0">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-7 col-md-7 col-12 mb-4 mb-lg-3">
                                 <div class="custom-block bg-white shadow-lg">
                                     <a href="influencer.html">
                                         <div class="d-flex">
                                             <div>
                                                 <h5 class="mb-2">Education & Teaching
-</h5>
+                                                </h5>
 
                                                 <p class="mb-0">Delivering the information to its recipient requires a certain level of experience. So as its related services. Educational-related products and services require the level of our influencers
-</p>
+                                                </p>
                                             </div>
 
-                                            <span class="badge bg-advertising rounded-pill ms-auto">6</span>
-                                        </div>
-
-                                        <img src="/assets/heero/images/topics/undraw_educator_re_ju47.svg"
-                                            class="custom-block-image img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="custom-block bg-white shadow-lg">
-                                    <a href="influencer.html">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2">Educational content creators</h5>
-
-                                                <p class="mb-0">These influencers create content that is educational in
-                                                    nature.</p>
-                                            </div>
-
-                                            <span class="badge bg-advertising rounded-pill ms-auto">50</span>
+                                            <span class="badge bg-advertising  rounded-pill ms-auto"><i class="bi bi-bookmark-star-fill"></i></span>
                                         </div>
 
                                         <img src="/assets/heero/images/topics/undraw_education_f8ru.svg"
@@ -295,187 +512,124 @@
                             </div>
                         </div>
                     </div>
-                    <!--start section finance -------------------------------------------------------------------------->
-                    <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab"
-                        tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
-                                <div class="custom-block bg-white shadow-lg">
-                                    <a href="influencer.html">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2">Financial experts</h5>
 
-                                                <p class="mb-0">These influencers share their knowledge and expertise on
-                                                    topics such as investing, budgeting, and personal finance. </p>
-                                            </div>
 
-                                            <span class="badge bg-finance rounded-pill ms-auto">10</span>
+
+
+  <!--start section Religion------------------------------------------------------------------------>
+
+                    <div class="tab-pane fade" id="Religion-tab-pane" role="tabpanel" aria-labelledby="Religion-tab-pane"
+                    tabindex="0">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-7 col-md-7 col-12 mb-4 mb-lg-3">
+                            <div class="custom-block bg-white shadow-lg">
+                                <a href="influencer.html">
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Religion
+                                            </h5>
+
+                                            <p class="mb-0">Make your religion-related (App, website, platform, …etc.) be heard from the beacon of our religious influencers.
+
+                                            </p>
                                         </div>
 
-                                        <img src="/assets/heero/images/topics/undraw_projections_re_ulc6 (1).svg"
-                                            class="custom-block-image img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="custom-block custom-block-overlay">
-                                    <div class="d-flex flex-column h-100">
-
-
-                                        <div class="custom-block-overlay-text d-flex">
-                                            <div>
-                                                <h5 class="text-white mb-2">Stock market gurus</h5>
-
-                                                <p class="text-white">These influencers share their insights and
-                                                    predictions on the stock market. They can help people to make
-                                                    informed investment decisions and to potentially grow their wealth.
-                                                </p>
-
-                                                <a href="#" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
-                                            </div>
-
-                                            <span class="badge bg-finance rounded-pill ms-auto">25</span>
-                                        </div>
-
-                                        <div class="social-share d-flex">
-                                            <p class="text-white me-4">Share:</p>
-
-                                            <ul class="social-icon">
-                                                <li class="social-icon-item">
-                                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                                </li>
-
-                                                <li class="social-icon-item">
-                                                    <a href="#" class="social-icon-link bi-facebook"></a>
-                                                </li>
-
-                                                <li class="social-icon-item">
-                                                    <a href="#" class="social-icon-link bi-pinterest"></a>
-                                                </li>
-                                            </ul>
-
-                                            <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
-                                        </div>
-
-                                        <div class="section-overlay"></div>
+                                        <span class="badge bg-music rounded-pill ms-auto"><i class="bi bi-bookmark-star-fill"></i></span>
                                     </div>
-                                </div>
+
+                                    <img src="/assets/heero/images/topics/undraw_meditating_re_aiqa.svg"
+                                        class="custom-block-image img-fluid" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!--start section Lifestyle-------------------------------------------------------------------------->
-                    <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab"
+                </div>
+
+
+
+                    <!--start section Gaming------------------------------------------------------------------------->
+                    <div class="tab-pane fade" id="Gaming-tab-pane" role="tabpanel" aria-labelledby="Gaming-tab-pane"
                         tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                <div class="custom-block bg-white shadow-lg">
-                                    <a href="influencer.html">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2">Faith-based content creators</h5>
-
-                                                <p class="mb-0">These influencers create content that is inspired by
-                                                    their faith. </p>
-                                            </div>
-
-                                            <span class="badge bg-music rounded-pill ms-auto">10</span>
-                                        </div>
-
-                                        <img src="/assets/heero/images/topics/undraw_meditating_re_aiqa.svg"
-                                            class="custom-block-image img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                <div class="custom-block bg-white shadow-lg">
-                                    <a href="influencer.html">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2">Music</h5>
-
-                                                <p class="mb-0">Music influencers share their love of music with their
-                                                    followers. </p>
-                                            </div>
-
-                                            <span class="badge bg-music rounded-pill ms-auto">5</span>
-                                        </div>
-
-                                        <img src="/assets/heero/images/topics/undraw_happy_music_g6wc.png"
-                                            class="custom-block-image img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-12">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
                                 <div class="custom-block bg-white shadow-lg">
                                     <a href="influencer.html">
                                         <div class="d-flex">
                                             <div>
                                                 <h5 class="mb-2">Gaming</h5>
 
-                                                <p class="mb-0">Gaming influencers share their gameplay and tips on
-                                                    popular video games.</p>
+                                                <p class="mb-0"> 
+
+                                                    Wanna make your voice heard by gaming enthusiasts? Go ahead and talk to them through our gaming influencers. 
+
+
+                                                </p>
                                             </div>
 
-                                            <span class="badge bg-music rounded-pill ms-auto">2</span>
+                                            <span class="badge bg-education rounded-pill ms-auto"><i class="bi bi-bookmark-star-fill"></i></span>
                                         </div>
 
-                                        <img src="/assets/heero/images/topics/undraw_gaming_re_cma2.svg"
+                                        <img src="/assets/heero/images/gaming.svg"
                                             class="custom-block-image img-fluid" alt="">
                                     </a>
                                 </div>
                             </div>
+
+                    
                         </div>
                     </div>
-                    <!--start section Lifestyle-------------------------------------------------------------------------->
-                    <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab"
-                        tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
-                                <div class="custom-block bg-white shadow-lg">
-                                    <a href="influencer.html">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2">Beauty</h5>
 
-                                                <p class="mb-0"> Beauty influencers promote makeup, skincare, and hair
-                                                    products.</p>
-                                            </div>
 
-                                            <span class="badge bg-education rounded-pill ms-auto">80</span>
-                                        </div>
 
-                                        <img src="/assets/heero/images/topics/undraw_makeup_artist_rxn8.svg"
-                                            class="custom-block-image img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
 
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="custom-block bg-white shadow-lg">
-                                    <a href="influencer.html">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h5 class="mb-2">Food</h5>
 
-                                                <p class="mb-0"> Food influencers share recipes, cooking tips, and
-                                                    reviews of restaurants. </p>
-                                            </div>
 
-                                            <span class="badge bg-education rounded-pill ms-auto">75</span>
-                                        </div>
 
-                                        <img src="/assets/heero/images/topics/undraw_cooking_p7m1.svg"
-                                            class="custom-block-image img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                  
+
+
+               <!--start section Lifestyle-------------------------------------------------------------------------->
+               <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="food"
+                    tabindex="0">
+                     <div class="row d-flex justify-content-center">
+                     <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
+                   <div class="custom-block bg-white shadow-lg">
+                     <a href="influencer.html">
+                     <div class="d-flex">
+                    <div>
+                        <h5 class="mb-2">Food</h5>
+
+                        <p class="mb-0"> Get the salivate of your targeted audience calls for your product. Go ahead and use their hunger to your service in your favorite.  
+
+                        </p>
                     </div>
-                </div>
+
+                    <span class="badge bg-education rounded-pill ms-auto"><i class="bi bi-bookmark-star-fill"></i></span>
+                     </div>
+ 
+                     <img src="/assets/heero/images/food.svg"
+                     class="custom-block-image img-fluid" alt="">
+                 </a>
+                 </div>
+              </div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             </div>
         </div>
@@ -565,7 +719,7 @@ Product
     </div>
 </section>
 
-
+<!--
 <section class="faq-section section-padding" id="section_4">
     <div class="container">
         <div class="row">
@@ -636,7 +790,7 @@ Product
         </div>
     </div>
 </section>
-
+-->
 <!--start section  contact-----------------------------------------------------------------/-->
 <section class="contact-section section-padding section-bg" id="section_5">
     <div class="container">
@@ -649,7 +803,7 @@ Product
             <div class="col-lg-5 col-12 mb-4 mb-lg-0">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.3463217727167!2d55.27827491924037!3d25.191540774488573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682b909f898f%3A0xaedce04c824602de!2sBoulevard%20Central!5e0!3m2!1sar!2seg!4v1691933010080!5m2!1sar!2seg"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
