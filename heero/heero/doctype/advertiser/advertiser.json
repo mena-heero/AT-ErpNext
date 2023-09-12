@@ -100,6 +100,7 @@
    "label": "Notes"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_wyil4",
    "fieldtype": "Section Break"
   },
@@ -131,7 +132,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-17 14:22:31.517426",
+ "modified": "2023-09-11 09:02:39.788044",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Advertiser",

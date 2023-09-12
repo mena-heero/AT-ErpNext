@@ -906,7 +906,7 @@ strong {
 -----------------------------------------*/
 .site-header {
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  padding-top :  150px; ;
+  
 
   
 }
@@ -942,7 +942,7 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: var(--secondary-color);
+  background-color: #0d1b1a;
 }
 
 .navbar {
@@ -1166,13 +1166,7 @@ min-width: 250px;
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
-.hero-section {	
-  background-image: linear-gradient(0deg, #ffffff 0%, #80d0c7 100%);	
-  position: relative;	
-  overflow: hidden;	
-  padding-top: 150px;	
-  padding-bottom: 150px;	
-}
+
 
 .hero-section .input-group {
   background-color: var(--white-color);
