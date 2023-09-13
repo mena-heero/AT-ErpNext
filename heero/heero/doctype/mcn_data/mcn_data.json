@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:channel_name",
+ "creation": "2023-07-25 09:09:51.121663",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "channel_name",
+  "channel_link",
+  "email",
+  "column_break_wz32x",
+  "phone",
+  "influencer_link",
+  "contacted",
+  "section_break_4kcor",
+  "inserted_by",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "channel_name",
+   "fieldtype": "Data",
+   "label": "Channel Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "channel_link",
+   "fieldtype": "Data",
+   "label": "Channel Link"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "influencer_link",
+   "fieldtype": "Link",
+   "label": "Influencer Link",
+   "options": "Influencers"
+  },
+  {
+   "fieldname": "inserted_by",
+   "fieldtype": "Select",
+   "label": "Inserted By",
+   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nNairaa\nShahinda\nViola\nOther"
+  },
+  {
+   "default": "0",
+   "fieldname": "contacted",
+   "fieldtype": "Check",
+   "label": "Contacted"
+  },
+  {
+   "fieldname": "column_break_wz32x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4kcor",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-15 09:10:00.908056",
+ "modified_by": "Administrator",
+ "module": "Heero",
+ "name": "MCN Data",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

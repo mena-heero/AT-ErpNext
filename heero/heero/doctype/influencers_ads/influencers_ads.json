@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:influencer",
+ "creation": "2023-08-03 15:25:10.139210",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "influencer",
+  "minimum_grantee",
+  "total_cost",
+  "column_break_jexzx",
+  "deal",
+  "payment_details",
+  "invloice",
+  "contract",
+  "section_break_xi0mq",
+  "draft_approval_stats",
+  "publishing_date",
+  "status",
+  "comments",
+  "column_break_6muvh",
+  "approvec",
+  "done",
+  "referral_code",
+  "deal_by",
+  "section_break_2nqzw",
+  "posted_ads"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "influencer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Influencer",
+   "options": "Influencers",
+   "unique": 1
+  },
+  {
+   "fieldname": "minimum_grantee",
+   "fieldtype": "Data",
+   "label": "Minimum Grantee"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Data",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "deal",
+   "fieldtype": "Data",
+   "label": "Deal"
+  },
+  {
+   "fieldname": "draft_approval_stats",
+   "fieldtype": "Data",
+   "label": "Draft Approval Stats"
+  },
+  {
+   "fieldname": "payment_details",
+   "fieldtype": "Data",
+   "label": "Payment Details "
+  },
+  {
+   "fieldname": "invloice",
+   "fieldtype": "Attach",
+   "label": "Invloice"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Attach",
+   "label": "Contract"
+  },
+  {
+   "fieldname": "publishing_date",
+   "fieldtype": "Data",
+   "label": "Publishing Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Waiting Draft Approval\nWaiting Payment\nHalf Payment Sent\nPartially Paid\nFinished"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  },
+  {
+   "default": "0",
+   "fieldname": "approvec",
+   "fieldtype": "Check",
+   "label": "Approvec"
+  },
+  {
+   "default": "0",
+   "fieldname": "done",
+   "fieldtype": "Check",
+   "label": "Done"
+  },
+  {
+   "fieldname": "referral_code",
+   "fieldtype": "Data",
+   "label": "Referral Code"
+  },
+  {
+   "fieldname": "posted_ads",
+   "fieldtype": "Long Text",
+   "label": "Posted ADS"
+  },
+  {
+   "fieldname": "deal_by",
+   "fieldtype": "Link",
+   "label": "Deal By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_jexzx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xi0mq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_6muvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2nqzw",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "links": [],
+ "modified": "2023-08-06 09:44:55.514082",
+ "modified_by": "Administrator",
+ "module": "Heero",
+ "name": "Influencers ADS",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

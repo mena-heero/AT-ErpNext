@@ -26,7 +26,8 @@
   "assigned_by",
   "assigned_by_full_name",
   "sender",
-  "assignment_rule"
+  "assignment_rule",
+  "naming__series"
  ],
  "fields": [
   {
@@ -41,7 +42,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nClosed\nCancelled"
+   "options": "Open\nClosed\nCancelled\nDone"
   },
   {
    "default": "Medium",
@@ -156,11 +157,17 @@
    "fieldtype": "Table",
    "label": "Details",
    "options": "Task Details"
+  },
+  {
+   "fieldname": "naming__series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming  Series"
   }
  ],
  "icon": "fa fa-check",
  "links": [],
- "modified": "2023-06-28 11:57:36.403999",
+ "modified": "2023-07-24 08:55:31.379594",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Daily Todo",

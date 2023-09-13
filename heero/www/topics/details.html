@@ -1,0 +1,13 @@
+{% extends "templates/at_base.html" %}
+{% block title %} {{ topic.title }} {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-12 mt-5">
+            <img src="{{ topic.cover }}" class="img-fluid" alt="{{ topic.title }}">
+            <h1 class="mt-4">{{ topic.title }}</h1>
+            <p>{{ topic.content }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

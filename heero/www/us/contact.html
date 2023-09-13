@@ -1,0 +1,177 @@
+{% extends "templates/at_base.html" %}
+
+
+{% block title%} Contact Us {% endblock%}
+ 
+ 
+{% block content%}
+
+<header
+  class="site-header d-flex flex-column justify-content-center align-items-center header-infl"
+>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 col-12">
+        <nav aria-label="breadcrumb ">
+         
+        </nav>
+
+        <h2 class="text-white">We Are Here To Help</h2>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<style>
+  .site-header {
+      background-image: linear-gradient(
+      15deg, #045a69 0%, #80d0c7 100%);
+      padding-top: 150px;
+      padding-bottom: 80px;
+      }
+      
+</style>
+<section class="section-padding section-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-12">
+        <h3 class="mb-4 pb-2">We'd love to hear from you</h3>
+      </div>
+
+      <div class="line-title mb-4">
+        <h4 class="line">Contact us</h4>
+      </div>
+
+      <div class="col-lg-6 col-12 mx-auto mt-lg-0">
+        <img src="/assets/heero/images/contact.webp" style="width: 100%" />
+
+        <h5 class="mt-4 mb-2"></h5>
+      </div>
+
+      <div class="col-lg-6 col-12">
+        <form id="contact-form" class="custom-form contact-form" role="form">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Name"
+                  required=""
+                />
+
+                <label for="floatingInput">Name</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-floating">
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  class="form-control"
+                  placeholder="phone"
+                  required=""
+                />
+
+                <label for="floatingInput">phone</label>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-12">
+              <div class="form-floating">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  pattern="[^ @]*@[^ @]*"
+                  class="form-control"
+                  placeholder="Email address"
+                  required=""
+                />
+
+                <label for="floatingInput">Email address</label>
+              </div>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Tell us any inquiry"
+              ></textarea>
+
+              <label for="floatingTextarea">Tell us any inquiry</label>
+            </div>
+
+            <div class="col-lg-4 col-12 ms-auto">
+              <button type="submit" class="form-control" id="submit-button">
+                Send
+              </button>
+            </div>
+          </div>
+          {#
+          <div class="line-title m-4">
+            <h4 class="line">Reach Us Here If You Prefer</h4>
+          </div>
+
+          <div class="mb-4 text-center social-icons">
+            <a class="bi bi-facebook fs-2 p-2 social-btn"></a>
+
+            <a class="bi bi-youtube fs-2 p-2 social-btn"></a>
+
+            <a class="bi bi-instagram fs-2 p-2 social-btn"></a>
+
+            <a class="bi bi-linkedin fs-2 p-2 social-btn"></a>
+          </div>
+          #}
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document
+    .getElementById("submit-button")
+    .addEventListener("click", submitContactForm);
+
+  function submitContactForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
+
+    var requestData = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    };
+
+    fetch("/api/method/heero.api.lead_at", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(requestData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data); // Log the response for troubleshooting
+        if (data.message) {
+          alert("Thank You for contacting us");
+        } else {
+          alert("Error submitting form ,, please try again");
+        }
+      })
+      .catch((error) => {
+        console.error("Fetch Error:", error);
+      });
+  }
+</script>
+
+{% endblock %}
