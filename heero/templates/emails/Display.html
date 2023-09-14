@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
     <style>
         body {
@@ -15,7 +15,20 @@
             margin: 0 auto;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 6px #0000001a;
+
+        }
+
+        .header {
+            background-color: #b1dff0; /* Your header background color */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .logo {
+            max-width: 100px; /* Adjust the size of your logo */
+            margin: 0 auto;
+            display: block;
         }
 
         h1 {
@@ -32,7 +45,7 @@
         }
 
         a {
-            color: #0078d4;
+            color: #049142; /* Your link color */
             text-decoration: none;
         }
 
@@ -55,9 +68,13 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>{{website}}</h1>
+<body dir="rtl">
+<div class="header">
+        <img src="/assets/heero/images/topics/logo2.webp" alt="AllTargeting" class="logo"> 
+    </div>
+    <div class="container" dir="rtl">
+        <h1>{% set doc = doc %}
+    {{ doc.email }} | {{ doc.website }}</h1>
         <p>مرحبا!</p>
         <p>الايميل بخصوص اعلان مجموعه خدمات استثمارية وتسويقية.</p>
         <p>مثل كورس استثمار الأسهم وأدوات الاستثمار، ومنصات التداول.</p>
