@@ -905,7 +905,8 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(
+        15deg, #045a698e 0%, #80d0c7 100%);
   
 
   

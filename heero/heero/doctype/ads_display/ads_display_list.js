@@ -14,7 +14,7 @@ frappe.listview_settings['Ads Display'] = {
 		action(doc) {
 			// Define the action to be executed when the button is clicked
 			frappe.call({
-				method: 'heero.heero.doctype.ads_display.ads_display.send_email_to_uncontacted_adsdisplay',
+				method: 'heero.heero.doctype.ads_display.ads_display.send_email_to_uncontacted_party',
 				args: { docname: doc.name },
 				callback: function (r) {
 					if (r.message) {

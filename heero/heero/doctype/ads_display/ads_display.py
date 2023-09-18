@@ -18,11 +18,15 @@ def send_email_to_uncontacted_party(docname):
     if not doc.contacted:
         try:
             # Customize the email subject, template, and any other parameters as needed
-            email_subject = "إمكانية الإعلان على موقعك"
-            template_name = "Ads Display"
+            email_subject = "Get More Customers/Advertise With Us"
+            template_name = "Ads"
             email_template = frappe.get_doc("Email Template", template_name)
-            sender = "contact@alltargeting.com"
+            sender = "ads@alltargeting.com"
 
+            # Render the email content
+            context = {"doc": doc}
+            email_content = frappe.render_template(email_template.response, context)
+            print(email_content)
             # Send the email
             frappe.sendmail(
                 recipients=[doc.email],
@@ -39,7 +43,7 @@ def send_email_to_uncontacted_party(docname):
                 "communication_type": "Communication",
                 "communication_medium": "Email",
                 "sent_or_received": "Sent",
-                "content": email_template.name,  # You can customize this as needed
+                "content": email_content,
                 "reference_doctype": doc.doctype,
                 "reference_name": doc.name,
                 "sender": sender,
