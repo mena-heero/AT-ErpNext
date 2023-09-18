@@ -17,36 +17,56 @@ def send_email_to_uncontacted_party(docname):
     # Check if the record has not been contacted
     if not doc.contacted:
         try:
-            # Customize the email subject, template, and any other parameters as needed
+            # Customize the email subject and sender
             email_subject = "Get More Customers/Advertise With Us"
-            template_name = "Ads"
-            email_template = frappe.get_doc("Email Template", template_name)
             sender = "ads@alltargeting.com"
 
-            # Render the email content
-            context = {"doc": doc}
-            if email_template.use_html:
-                email_content = frappe.render_template(email_template.response_html, context)
+            # Determine the email template based on inserted_by
+            inserted_by = doc.inserted_by
+            template_name = ""
+
+            # Define mappings from inserted_by to email templates
+            template_mappings = {
+                "Marina": "Display",
+                "Shahinda": "Ads",
+                # Add more mappings as needed
+            }
+
+            # Check if inserted_by has a mapping to a template
+            if inserted_by in template_mappings:
+                template_name = template_mappings[inserted_by]
             else:
-                email_content = frappe.render_template(email_template.response, context)
+                # If there's no specific mapping, use a default template
+                template_name = "Ads"
+
+            # Fetch the email template
+            email_template = frappe.get_doc("Email Template", template_name)
 
             # Send the email
-            frappe.sendmail(
-                recipients=[doc.email],
-                subject=email_subject,
-                message=email_content,
-                sender=sender,
-                args={"doc": doc}
-            )
+            try:
+                frappe.sendmail(
+                    recipients=[doc.email],
+                    subject=email_subject,
+                    template=email_template.name,
+                    sender=sender,
+                    args={"doc": doc}
+                )
+            except Exception as e:
+                # Handle the error when the email template is not found or other sendmail issues
+                frappe.log_error(f"Error sending email: {str(e)}")
+                return f"Error sending email: {str(e)}"
 
-            # Create a communication record
+            # Get the email content
+            email_content = email_template.response
+
+            # Create a communication record with the email content
             communication = frappe.get_doc({
                 "doctype": "Communication",
                 "subject": email_subject,
                 "communication_type": "Communication",
                 "communication_medium": "Email",
                 "sent_or_received": "Sent",
-                "content": email_content,
+                "content": email_template.name,
                 "reference_doctype": doc.doctype,
                 "reference_name": doc.name,
                 "sender": sender,
