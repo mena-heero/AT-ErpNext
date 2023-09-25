@@ -2,33 +2,32 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:website",
- "creation": "2023-06-19 16:02:25.835823",
+ "autoname": "field:ads",
+ "creation": "2023-09-20 10:35:45.018195",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "website",
-  "influencer",
-  "influencer_channel",
-  "column_break_tuopd",
-  "contacted",
+  "ads",
   "insterted_by",
+  "contacted",
+  "column_break_tuopd",
+  "date",
+  "category",
   "section_break_lpofw",
   "email",
   "email2",
   "email3",
-  "column_break_dpkpm",
+  "column_break_gbh3d",
   "phone",
   "phone2",
   "section_break_wyil4",
   "full_contacts",
   "column_break_ztqdx",
   "notes",
-  "name1",
-  "date",
-  "category"
+  "name1"
  ],
  "fields": [
   {
@@ -38,19 +37,18 @@
    "unique": 1
   },
   {
-   "fieldname": "influencer",
+   "fieldname": "ads",
    "fieldtype": "Data",
-   "label": "Influencer"
+   "label": "WEB ADS",
+   "unique": 1
   },
   {
-   "fieldname": "influencer_channel",
-   "fieldtype": "Data",
-   "label": "Influencer Channel"
-  },
-  {
-   "fieldname": "full_contacts",
-   "fieldtype": "Text Editor",
-   "label": "Full Contacts"
+   "default": "Other",
+   "fieldname": "insterted_by",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Insterted By",
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nOther"
   },
   {
    "default": "0",
@@ -60,16 +58,8 @@
    "label": "Contacted"
   },
   {
-   "fieldname": "section_break_lpofw",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "Other",
-   "fieldname": "insterted_by",
-   "fieldtype": "Select",
-   "in_standard_filter": 1,
-   "label": "Insterted By",
-   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nOther"
+   "fieldname": "column_break_tuopd",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "email",
@@ -82,8 +72,15 @@
    "label": "Email2"
   },
   {
-   "fieldname": "column_break_dpkpm",
-   "fieldtype": "Column Break"
+   "fieldname": "email3",
+   "fieldtype": "Data",
+   "label": "Email3"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_lpofw",
+   "fieldtype": "Section Break",
+   "label": "CONTACT"
   },
   {
    "fieldname": "phone",
@@ -96,32 +93,29 @@
    "label": "Phone2"
   },
   {
-   "fieldname": "notes",
-   "fieldtype": "Text Editor",
-   "label": "Notes"
-  },
-  {
    "collapsible": 1,
    "fieldname": "section_break_wyil4",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Other Data"
+  },
+  {
+   "fieldname": "full_contacts",
+   "fieldtype": "Text Editor",
+   "label": "Full Contacts"
   },
   {
    "fieldname": "column_break_ztqdx",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_tuopd",
-   "fieldtype": "Column Break"
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
   },
   {
    "fieldname": "name1",
    "fieldtype": "Data",
    "label": "Name"
-  },
-  {
-   "fieldname": "email3",
-   "fieldtype": "Data",
-   "label": "Email3"
   },
   {
    "fieldname": "date",
@@ -135,14 +129,17 @@
    "fieldtype": "Select",
    "label": "Category",
    "options": "Financial & Trading\nTechnology\nGaming\nEducation\nFashion\nCooking, Foods\nHealth care\nEarn Money\nGeneral"
+  },
+  {
+   "fieldname": "column_break_gbh3d",
+   "fieldtype": "Column Break"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-20 10:52:21.989329",
+ "modified": "2023-09-20 10:44:14.483128",
  "modified_by": "Administrator",
  "module": "Heero",
- "name": "Advertiser",
+ "name": "Web ADS",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
