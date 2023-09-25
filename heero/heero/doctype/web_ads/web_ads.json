@@ -33,8 +33,7 @@
   {
    "fieldname": "website",
    "fieldtype": "Data",
-   "label": "Website",
-   "unique": 1
+   "label": "Website"
   },
   {
    "fieldname": "ads",
@@ -136,7 +135,7 @@
   }
  ],
  "links": [],
- "modified": "2023-09-20 10:44:14.483128",
+ "modified": "2023-09-25 11:12:40.398985",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Web ADS",
