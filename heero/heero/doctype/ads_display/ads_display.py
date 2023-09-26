@@ -4,27 +4,15 @@
 import frappe
 from frappe.model.document import Document
 from frappe import _
+import random
 
 class AdsDisplay(Document):
    pass
 
 
-import frappe
-from frappe.model.document import Document
-from frappe import _
-
-class AdsDisplay(Document):
-   pass
-
-import frappe
-from frappe.model.document import Document
-from frappe import _
-
-class AdsDisplay(Document):
-    pass
 
 @frappe.whitelist()
-def send_email_to_uncontacted_party():
+def send_email_to_uncontacted_AdsDisplay():
     try:
         # Query uncontacted records in the "Ads Display" document type
         uncontacted_records = frappe.get_list("Ads Display", filters={"contacted": 0})
@@ -32,7 +20,7 @@ def send_email_to_uncontacted_party():
         # Check if there are any uncontacted records
         if uncontacted_records:
             # Randomly select one uncontacted record
-            selected_record = frappe.utils.random.choice(uncontacted_records)
+            selected_record = random.choice(uncontacted_records)
 
             # Get the selected record's docname
             docname = selected_record["name"]
@@ -54,10 +42,10 @@ def send_email_to_uncontacted_party():
             if inserted_by in email_templates:
                 template_name = email_templates[inserted_by]
                 email_template = frappe.get_doc("Email Template", template_name)
-                sender = "contact@alltargeting.com"
+                sender = "contact@flagedu.com"
 
                 # Customize the email subject, template, and any other parameters as needed
-                email_subject = "Get More Customers/Advertise With Us"
+                email_subject = "إمكانية الإعلان على موقعك"
 
                 # Render the email content
                 context = {"doc": doc}
