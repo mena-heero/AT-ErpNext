@@ -2,16 +2,14 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:website",
- "creation": "2023-06-19 16:02:25.835823",
+ "autoname": "format:expo{name1}-{MM}--{naming_series}",
+ "creation": "2023-09-27 15:41:36.663063",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "website",
-  "influencer",
-  "influencer_channel",
   "column_break_tuopd",
   "contacted",
   "insterted_by",
@@ -28,48 +26,39 @@
   "notes",
   "name1",
   "date",
-  "category"
+  "category",
+  "naming_series"
  ],
  "fields": [
   {
    "fieldname": "website",
    "fieldtype": "Data",
-   "label": "Website",
-   "unique": 1
+   "label": "Website"
   },
   {
-   "fieldname": "influencer",
-   "fieldtype": "Data",
-   "label": "Influencer"
-  },
-  {
-   "fieldname": "influencer_channel",
-   "fieldtype": "Data",
-   "label": "Influencer Channel"
-  },
-  {
-   "fieldname": "full_contacts",
-   "fieldtype": "Text Editor",
-   "label": "Full Contacts"
+   "fieldname": "column_break_tuopd",
+   "fieldtype": "Column Break"
   },
   {
    "default": "0",
    "fieldname": "contacted",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Contacted"
-  },
-  {
-   "fieldname": "section_break_lpofw",
-   "fieldtype": "Section Break"
   },
   {
    "default": "Other",
    "fieldname": "insterted_by",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Insterted By",
    "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nOther"
+  },
+  {
+   "fieldname": "section_break_lpofw",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "email",
@@ -80,6 +69,11 @@
    "fieldname": "email2",
    "fieldtype": "Data",
    "label": "Email2"
+  },
+  {
+   "fieldname": "email3",
+   "fieldtype": "Data",
+   "label": "Email3"
   },
   {
    "fieldname": "column_break_dpkpm",
@@ -96,32 +90,28 @@
    "label": "Phone2"
   },
   {
-   "fieldname": "notes",
-   "fieldtype": "Text Editor",
-   "label": "Notes"
-  },
-  {
    "collapsible": 1,
    "fieldname": "section_break_wyil4",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "full_contacts",
+   "fieldtype": "Text Editor",
+   "label": "Full Contacts"
   },
   {
    "fieldname": "column_break_ztqdx",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_tuopd",
-   "fieldtype": "Column Break"
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
   },
   {
    "fieldname": "name1",
    "fieldtype": "Data",
    "label": "Name"
-  },
-  {
-   "fieldname": "email3",
-   "fieldtype": "Data",
-   "label": "Email3"
   },
   {
    "fieldname": "date",
@@ -135,15 +125,20 @@
    "fieldtype": "Select",
    "label": "Category",
    "options": "Financial & Trading\nTechnology\nGaming\nEducation\nFashion\nCooking, Foods\nHealth care\nEarn Money\nForex\nGeneral"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Responsable"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-27 15:41:06.103620",
+ "modified": "2023-09-27 16:13:19.549244",
  "modified_by": "Administrator",
  "module": "Heero",
- "name": "Advertiser",
- "naming_rule": "By fieldname",
+ "name": "EXPO Event",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

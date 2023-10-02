@@ -120,28 +120,17 @@ website_routes = [
 # ---------------
 
 scheduler_events = {
-#	"all": [
-#		"heero.tasks.all"
-#	],
-#	"daily": [
-#		"heero.tasks.daily"
-#	],
-	"hourly": [
-		"heero.heero.doctype.ads_display.ads_display.send_email_to_uncontacted_AdsDisplay",
-		"heero.heero.doctype.mcn_data.mcn_data.send_email_to_uncontacted_MCN",
-	],
     "cron": {
-        "*/30 * * * *": [
+        "30 * * * *": [
             "heero.heero.doctype.ads_display.ads_display.send_email_to_uncontacted_AdsDisplay",
-            'heero.heero.doctype.mcn_data.mcn_data.send_email_to_uncontacted_MCN',
-        ],
-	},
-#	"weekly": [
-#		"heero.tasks.weekly"
-#	],
-#	"monthly": [
-#		"heero.tasks.monthly"
-#	],
+            "heero.heero.doctype.mcn_data.mcn_data.send_email_to_uncontacted_MCN"
+        ]
+    },
+    "hourly": [
+        "heero.heero.doctype.ads_display.ads_display.send_email_to_uncontacted_AdsDisplay",
+        "heero.heero.doctype.mcn_data.mcn_data.send_email_to_uncontacted_MCN",
+    ],
+    
 }
 
 # Testing

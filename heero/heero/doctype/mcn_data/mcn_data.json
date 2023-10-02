@@ -35,6 +35,7 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Email"
   },
   {
@@ -79,7 +80,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-15 09:10:00.908056",
+ "modified": "2023-09-30 09:47:36.185448",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "MCN Data",
