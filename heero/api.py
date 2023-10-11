@@ -122,7 +122,7 @@ def flagedu_lead():
             
             # Add other fields here
         })
-        lead.insert()
+        lead.insert(ignore_permissions=True)
         return {"message": "Thank You for contacting us"}
     except Exception as e:
         return {"error": _("Error creating lead: {0}").format(str(e))}

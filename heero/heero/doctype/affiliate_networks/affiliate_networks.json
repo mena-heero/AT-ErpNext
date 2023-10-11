@@ -3,32 +3,36 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:website",
- "creation": "2023-07-25 09:16:14.879464",
+ "creation": "2023-10-02 16:41:27.901253",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "name1",
   "website",
-  "date2",
-  "inserted_by",
+  "insterted_by",
   "contacted",
+  "column_break_tuopd",
+  "date",
   "section_break_lpofw",
   "email",
   "email2",
-  "stats",
-  "column_break_dpkpm",
+  "email3",
+  "column_break_gbh3d",
   "phone",
   "phone2",
-  "name1",
   "section_break_wyil4",
   "full_contacts",
   "column_break_ztqdx",
-  "notes",
-  "date",
-  "website_name"
+  "notes"
  ],
  "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
   {
    "fieldname": "website",
    "fieldtype": "Data",
@@ -36,18 +40,36 @@
    "unique": 1
   },
   {
+   "default": "Other",
+   "fieldname": "insterted_by",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Insterted By",
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nOther"
+  },
+  {
    "default": "0",
    "fieldname": "contacted",
    "fieldtype": "Check",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Contacted"
+  },
+  {
+   "fieldname": "column_break_tuopd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
   },
   {
    "collapsible": 1,
    "fieldname": "section_break_lpofw",
    "fieldtype": "Section Break",
-   "label": "Contact Details"
+   "label": "CONTACT"
   },
   {
    "fieldname": "email",
@@ -60,7 +82,12 @@
    "label": "Email2"
   },
   {
-   "fieldname": "column_break_dpkpm",
+   "fieldname": "email3",
+   "fieldtype": "Data",
+   "label": "Email3"
+  },
+  {
+   "fieldname": "column_break_gbh3d",
    "fieldtype": "Column Break"
   },
   {
@@ -77,7 +104,7 @@
    "collapsible": 1,
    "fieldname": "section_break_wyil4",
    "fieldtype": "Section Break",
-   "label": "More Info"
+   "label": "Other Data"
   },
   {
    "fieldname": "full_contacts",
@@ -92,52 +119,13 @@
    "fieldname": "notes",
    "fieldtype": "Text Editor",
    "label": "Notes"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Data",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Date"
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
-  },
-  {
-   "fieldname": "stats",
-   "fieldtype": "Data",
-   "label": "Stats"
-  },
-  {
-   "fieldname": "date2",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Date2"
-  },
-  {
-   "default": "Other",
-   "fieldname": "inserted_by",
-   "fieldtype": "Select",
-   "in_standard_filter": 1,
-   "label": "Inserted By",
-   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nShaimaa\nRowida\nOther"
-  },
-  {
-   "fieldname": "website_name",
-   "fieldtype": "Data",
-   "label": "Website Name"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-05 11:00:52.692931",
+ "modified": "2023-10-02 16:41:27.901253",
  "modified_by": "Administrator",
  "module": "Heero",
- "name": "Ads Display",
+ "name": "Affiliate Networks",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

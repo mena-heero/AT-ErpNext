@@ -123,12 +123,12 @@ scheduler_events = {
     "cron": {
         "30 * * * *": [
             "heero.heero.doctype.ads_display.ads_display.send_email_to_uncontacted_AdsDisplay",
-            "heero.heero.doctype.mcn_data.mcn_data.send_email_to_uncontacted_MCN"
+            # "heero.heero.doctype.mcn_data.mcn_data.send_email_to_uncontacted_MCN"
         ]
     },
     "hourly": [
         "heero.heero.doctype.ads_display.ads_display.send_email_to_uncontacted_AdsDisplay",
-        "heero.heero.doctype.mcn_data.mcn_data.send_email_to_uncontacted_MCN",
+        # "heero.heero.doctype.mcn_data.mcn_data.send_email_to_uncontacted_MCN",
     ],
     
 }
