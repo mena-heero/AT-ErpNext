@@ -11,10 +11,13 @@
   "name1",
   "email",
   "phone",
+  "column_break_idajk",
+  "country",
+  "company",
   "message",
   "source",
-  "naming_series",
-  "test"
+  "status",
+  "interest"
  ],
  "fields": [
   {
@@ -25,15 +28,12 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email",
-   "options": "Email",
-   "unique": 1
+   "label": "Email"
   },
   {
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone",
-   "options": "Phone"
+   "label": "Phone"
   },
   {
    "fieldname": "message",
@@ -41,25 +41,41 @@
    "label": "Message"
   },
   {
+   "default": "Landing",
    "fieldname": "source",
    "fieldtype": "Data",
    "label": "Source"
   },
   {
-   "fieldname": "naming_series",
+   "fieldname": "company",
    "fieldtype": "Data",
-   "label": "Naming series",
-   "read_only": 1
+   "label": "Company"
   },
   {
-   "fieldname": "test",
+   "fieldname": "country",
    "fieldtype": "Data",
-   "label": "test"
+   "label": "Country"
+  },
+  {
+   "fieldname": "column_break_idajk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed\nIn Progress\nCancelled\nWon"
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Data",
+   "label": "Interest"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-06 16:17:20.380958",
+ "modified": "2023-10-29 11:04:59.004139",
  "modified_by": "Administrator",
  "module": "AllTargeting",
  "name": "Flagedu-Lead",

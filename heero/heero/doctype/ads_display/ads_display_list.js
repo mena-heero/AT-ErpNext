@@ -2,6 +2,7 @@ frappe.listview_settings['Ads Display'] = {
 	button: {
 		show(doc) {
 			// Define conditions when the button should be shown
+			console.log('doc.contacted:', doc.contacted);
 			return !doc.contacted; // Show the button for uncontacted records
 		},
 		get_label() {

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px #0000001a;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #b1dff0; /* Your header background color */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .logo {
+            max-width: 100px; /* Adjust the size of your logo */
+            margin: 0 auto;
+            display: block;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 0 20px;
+            
+        }
+
+        a {
+            color: #049142; /* Your link color */
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 0 0 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .signature {
+            font-style: italic;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .img-link{
+            width: 100px;
+            margin: 0 auto;
+        }
+      .btn{
+        background: #1c8b89;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        color: #e5e7e7;
+       
+      
+        line-height: normal;
+        transition: all 0.3s;
+        padding: 10px 10px;
+        font-family: 'Tajawal', sans-serif;
+      }
+      .btn:hover{
+        background: #4ca7a5;
+      }
+  
+    </style>
+</head>
+<body dir="rtl">
+    <table width="100%" cellspacing="0" cellpadding="0" dir="rtl">
+        <tr>
+            <td class="header" style="background-color: #1c8b89;">
+                <center>
+                    <img src="https://flagedu.com/media/images/flagedu_1.original_sO8Js2Q.original.png" alt="flagedu" class="logo" href="https://flagedu.com">
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td class="container">
+                {% set username = frappe.session.user %}
+                {% set user= frappe.get_doc("User",username) %}
+                {% set doc = frappe.get_doc("Contact Forms", docname) %}
+                
+
+
+                <h1>مرحبًا {{doc.full_name}}</h1>
+
+               <h3> </h3>
+               
+           
+                <p> اتواصل معك بخصوص اهتمامك السابق بالتداول في {{doc.interest}} </p>
+                <p> نحن هنا لمساعدتك في بدأ طريق استثماري ناجح ونتطلع سويًا لتحقيق أهدافك وتقديم خدمة عالية الجودة وتلبية احتياجاتك </p>
+               
+
+
+
+                <br>
+                <span style="font-family: 'Tajawal', sans-serif; line-height: 22.4px;">
+              
+                 <strong> لا تتردد في التواصل معنا عبر الهاتف أو الواتساب [رقم] في أي وقت .</strong></span><br><br>
+
+                 <h3>   شكرًا مرة أخرى على اختيارك للتعامل معنا.    </h3>  
+                    <p>مع خالص التحية،</p> 
+                    <p>[الاسم]</p>     
+                    <a class="btn" href="https://api.whatsapp.com/send/?phone={{user.phone}}"> تواصل معنا الان </a>      
+            </td>
+           
+            
+        </tr>
+
+         
+    </table>
+    <div style="background-color: #e5e7e7; padding:30px;">
+    
+       <img class="logo" src="https://flagedu.com/media/images/flagedu_1.original_sO8Js2Q.original.png" alt="flagedu" class="logo" > 
+    </div>
+    
+</body>
+</html>
