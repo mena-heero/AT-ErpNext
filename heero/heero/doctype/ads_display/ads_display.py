@@ -42,7 +42,7 @@ def send_email_to_uncontacted_AdsDisplay():
             if inserted_by in email_templates:
                 template_name = email_templates[inserted_by]
                 email_template = frappe.get_doc("Email Template", template_name)
-                sender = "contact@flagedu.com"
+                sender = "contact@alltargeting.com"
 
                 # Customize the email subject, template, and any other parameters as needed
                 email_subject = "إمكانية الإعلان على موقعك"

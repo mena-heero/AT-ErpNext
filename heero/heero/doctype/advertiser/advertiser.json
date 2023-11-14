@@ -69,7 +69,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Insterted By",
-   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nOther"
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nShaimaa\nRowida\nOther"
   },
   {
    "fieldname": "email",
@@ -134,12 +134,12 @@
    "fieldname": "category",
    "fieldtype": "Select",
    "label": "Category",
-   "options": "Financial & Trading\nTechnology\nGaming\nEducation\nFashion\nCooking, Foods\nHealth care\nEarn Money\nGeneral"
+   "options": "Financial & Trading\nTechnology\nGaming\nEducation\nFashion\nCooking, Foods\nHealth care\nEarn Money\nForex\nGeneral"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-20 10:52:21.989329",
+ "modified": "2023-10-05 11:00:03.258828",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Advertiser",

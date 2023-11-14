@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{DD}-{MM}-{email}-{#####}",
  "creation": "2023-09-06 16:05:13.570419",
@@ -11,10 +12,18 @@
   "name1",
   "email",
   "phone",
-  "message",
+  "column_break_idajk",
+  "country",
+  "company",
+  "status",
+  "follow_up_section",
+  "follow_up",
+  "section_break_pcclg",
+  "interest",
   "source",
-  "naming_series",
-  "test"
+  "client_id",
+  "afp",
+  "message"
  ],
  "fields": [
   {
@@ -25,15 +34,14 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email",
-   "options": "Email",
-   "unique": 1
+   "in_standard_filter": 1,
+   "label": "Email"
   },
   {
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone",
-   "options": "Phone"
+   "in_standard_filter": 1,
+   "label": "Phone"
   },
   {
    "fieldname": "message",
@@ -41,25 +49,76 @@
    "label": "Message"
   },
   {
+   "default": "Landing",
    "fieldname": "source",
    "fieldtype": "Data",
    "label": "Source"
   },
   {
-   "fieldname": "naming_series",
+   "fieldname": "company",
    "fieldtype": "Data",
-   "label": "Naming series",
+   "label": "Company"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country"
+  },
+  {
+   "fieldname": "column_break_idajk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "New\nClosed\nIn Progress\nCancelled\nWon\nNo Whatsapp"
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Data",
+   "label": "Interest"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "section_break_pcclg",
+   "fieldtype": "Section Break",
+   "label": "Other Info"
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "Client ID",
    "read_only": 1
   },
   {
-   "fieldname": "test",
+   "fieldname": "follow_up",
+   "fieldtype": "Table",
+   "label": "Follow Up",
+   "options": "Lead FollowUp"
+  },
+  {
+   "fieldname": "afp",
    "fieldtype": "Data",
-   "label": "test"
+   "label": "AFP",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "follow_up_section",
+   "fieldtype": "Section Break",
+   "label": "Follow Up"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-06 16:17:20.380958",
+ "modified": "2023-11-11 16:34:26.741766",
  "modified_by": "Administrator",
  "module": "AllTargeting",
  "name": "Flagedu-Lead",

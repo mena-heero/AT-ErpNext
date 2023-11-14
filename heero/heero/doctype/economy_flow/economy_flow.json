@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:Eco-{company}-{first_name}{####}",
+ "creation": "2023-10-12 11:04:50.609657",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "first_name",
+  "last_name",
+  "email",
+  "column_break_5pg7e",
+  "phone",
+  "company",
+  "time",
+  "section_break_rylsi",
+  "parameter",
+  "contacted",
+  "status",
+  "column_break_g4sut",
+  "country_code",
+  "full_name",
+  "country"
+ ],
+ "fields": [
+  {
+   "default": "Eco",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
+  },
+  {
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "label": "Parameter"
+  },
+  {
+   "default": "0",
+   "fieldname": "contacted",
+   "fieldtype": "Check",
+   "label": "Contacted"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "QFTD\nNo FTD\nIn Progress"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "column_break_5pg7e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_rylsi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_g4sut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country_code",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Country Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-12 14:39:52.024392",
+ "modified_by": "Administrator",
+ "module": "Heero",
+ "name": "Economy Flow",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
