@@ -9,7 +9,8 @@
  "field_order": [
   "name1",
   "target",
-  "link"
+  "link",
+  "password"
  ],
  "fields": [
   {
@@ -26,11 +27,16 @@
    "fieldname": "link",
    "fieldtype": "HTML",
    "label": "Link"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-24 09:58:06.091956",
+ "modified": "2023-11-09 09:14:08.735066",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Links",

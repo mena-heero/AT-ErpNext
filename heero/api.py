@@ -113,7 +113,9 @@ def flagedu_lead():
         country=data.get('country')
         company=data.get('company')
         interest=data.get('interest')
-        
+        source=data.get('source')
+        client_id=data.get('client_id')
+        afp=data.get('afp')
         
         # Create a new lead document
         lead = frappe.get_doc({
@@ -124,9 +126,11 @@ def flagedu_lead():
             "phone":phone,
             "country":country,
             "company":company,
-            "status":"Open",
+            "status":"New",
             "interest":interest,
-            
+            "source":source,
+            "client_id":client_id,
+            "afp":afp
             # Add other fields here
         })
         lead.insert(ignore_permissions=True)
