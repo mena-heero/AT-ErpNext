@@ -9,7 +9,7 @@
    "label": "Added By Influencers"
   }
  ],
- "content": "[{\"id\":\"TzThNpYreY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">At-Home</span>\",\"col\":12}},{\"id\":\"8-hkj0bYqc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Influencers\",\"col\":3}},{\"id\":\"MR5azDuEZ7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Branding\",\"col\":3}},{\"id\":\"tP1hWjFHqj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Display ADs\",\"col\":3}},{\"id\":\"pCJwu7OP0m\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"MCN Data\",\"col\":3}},{\"id\":\"brgKLnjAoG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expo Event\",\"col\":3}},{\"id\":\"9z656FjQQx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"WEB ADS\",\"col\":3}},{\"id\":\"ewo36vqtLf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Flagedu Hot Traffic\",\"col\":3}},{\"id\":\"KNASpEhTwJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Emails\",\"col\":3}},{\"id\":\"1LyI_2sHZC\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gnuth51xL9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Follow Up\",\"col\":4}},{\"id\":\"qApnr3jTsC\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"New Influencers\",\"col\":4}},{\"id\":\"1Bop42lgzk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Contacted Advertisers\",\"col\":4}},{\"id\":\"3FCnpZIyu_\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Contacted MCN\",\"col\":4}},{\"id\":\"p1I7lpCU-K\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Contacted Display\",\"col\":4}},{\"id\":\"UeLAtTKzjM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SALES Data\",\"col\":3}},{\"id\":\"ZS_S5yxHwq\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"P2pFIk1Mi8\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Added By Influencers\",\"col\":12}},{\"id\":\"M5SlbGp7NU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Added By Adviertisers\",\"col\":12}}]",
+ "content": "[{\"id\":\"TzThNpYreY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">At-Home</span>\",\"col\":12}},{\"id\":\"8-hkj0bYqc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Influencers\",\"col\":3}},{\"id\":\"MR5azDuEZ7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Branding\",\"col\":3}},{\"id\":\"tP1hWjFHqj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Display ADs\",\"col\":3}},{\"id\":\"pCJwu7OP0m\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"MCN Data\",\"col\":3}},{\"id\":\"brgKLnjAoG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ToDo\",\"col\":3}},{\"id\":\"9z656FjQQx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"WEB ADS\",\"col\":3}},{\"id\":\"ewo36vqtLf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Flagedu Hot Traffic\",\"col\":3}},{\"id\":\"KNASpEhTwJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Emails\",\"col\":3}},{\"id\":\"1LyI_2sHZC\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gnuth51xL9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Follow Up\",\"col\":4}},{\"id\":\"qApnr3jTsC\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"New Influencers\",\"col\":4}},{\"id\":\"1Bop42lgzk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Contacted Advertisers\",\"col\":4}},{\"id\":\"3FCnpZIyu_\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Contacted MCN\",\"col\":4}},{\"id\":\"p1I7lpCU-K\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Contacted Display\",\"col\":4}},{\"id\":\"UeLAtTKzjM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SALES Data\",\"col\":3}},{\"id\":\"ZS_S5yxHwq\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"P2pFIk1Mi8\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Added By Influencers\",\"col\":12}},{\"id\":\"M5SlbGp7NU\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Added By Adviertisers\",\"col\":12}}]",
  "creation": "2023-06-22 16:41:24.633880",
  "custom_blocks": [],
  "docstatus": 0,
@@ -21,7 +21,7 @@
  "is_hidden": 0,
  "label": "At-Home",
  "links": [],
- "modified": "2023-11-08 15:56:18.653245",
+ "modified": "2023-11-19 11:54:45.031125",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "At-Home",
@@ -62,6 +62,13 @@
    "type": "DocType"
   },
   {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "ToDo",
+   "link_to": "ToDo",
+   "type": "DocType"
+  },
+  {
    "color": "Grey",
    "doc_view": "List",
    "label": "MCN Data",
@@ -94,13 +101,6 @@
    "doc_view": "List",
    "label": "WEB ADS",
    "link_to": "Web ADS",
-   "type": "DocType"
-  },
-  {
-   "color": "Pink",
-   "doc_view": "List",
-   "label": "Expo Event",
-   "link_to": "EXPO Event",
    "type": "DocType"
   },
   {

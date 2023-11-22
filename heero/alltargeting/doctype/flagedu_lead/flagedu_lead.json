@@ -93,6 +93,7 @@
   {
    "fieldname": "client_id",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Client ID",
    "read_only": 1
   },
@@ -105,6 +106,7 @@
   {
    "fieldname": "afp",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "AFP",
    "read_only": 1
   },
@@ -118,7 +120,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-11 16:34:26.741766",
+ "modified": "2023-11-20 10:28:48.339183",
  "modified_by": "Administrator",
  "module": "AllTargeting",
  "name": "Flagedu-Lead",
