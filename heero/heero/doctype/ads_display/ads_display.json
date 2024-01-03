@@ -124,7 +124,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Inserted By",
-   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nShaimaa\nRowida\nOther"
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nShaimaa\nRowida\nVerina\nMahmoud\nOther"
   },
   {
    "fieldname": "website_name",
@@ -134,7 +134,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-05 11:00:52.692931",
+ "modified": "2023-12-17 17:30:55.066953",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Ads Display",

@@ -14,16 +14,20 @@
   "written_by",
   "content_link",
   "video",
+  "column_break_h59ua",
   "script",
+  "english_v",
+  "posting_date",
+  "shceduled",
   "column_break_kgoz7",
   "type",
   "published",
   "flagedu_link",
   "yt_video",
   "revision_section",
-  "english_v",
   "reviewd",
   "reviewd_by",
+  "post",
   "column_break_binpu",
   "approved",
   "approved_by",
@@ -36,7 +40,7 @@
   "thumbnail",
   "column_break_une62",
   "comments",
-  "post"
+  "publish_state"
  ],
  "fields": [
   {
@@ -98,7 +102,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Type",
-   "options": "Evergreen\nCompany Review"
+   "options": "Evergreen\nCompany Review\nNews\nCopyWrite"
   },
   {
    "bold": 1,
@@ -190,11 +194,35 @@
    "fieldname": "thumbnail",
    "fieldtype": "Data",
    "label": "Thumbnail"
+  },
+  {
+   "default": "0",
+   "fieldname": "shceduled",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Shceduled"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "column_break_h59ua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "publish_state",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Publish State",
+   "options": "Shceduled\nPublished\nUnShceduled\nUpdating"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-21 18:09:48.820583",
+ "modified": "2023-12-27 14:51:54.750103",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Content",
@@ -237,6 +265,7 @@
    "write": 1
   }
  ],
+ "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

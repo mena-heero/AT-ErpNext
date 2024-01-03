@@ -47,7 +47,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Insterted By",
-   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nShaimaa\nRowida\nOther"
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nShaimaa\nRowida\nVerena\nMahmoud\nOther"
   },
   {
    "default": "0",
@@ -135,7 +135,7 @@
   }
  ],
  "links": [],
- "modified": "2023-10-05 11:01:18.600948",
+ "modified": "2023-12-17 17:32:18.180175",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Web ADS",

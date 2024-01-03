@@ -69,7 +69,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Insterted By",
-   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nShaimaa\nRowida\nOther"
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nShaimaa\nRowida\nVerena\nMahmoud\nOther"
   },
   {
    "fieldname": "email",
@@ -139,7 +139,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-05 11:00:03.258828",
+ "modified": "2023-12-17 17:32:42.911128",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Advertiser",

@@ -18,11 +18,14 @@
   "status",
   "follow_up_section",
   "follow_up",
+  "fstatus",
   "section_break_pcclg",
   "interest",
   "source",
   "client_id",
+  "column_break_syiow",
   "afp",
+  "afp2",
   "message"
  ],
  "fields": [
@@ -116,11 +119,29 @@
    "fieldname": "follow_up_section",
    "fieldtype": "Section Break",
    "label": "Follow Up"
+  },
+  {
+   "fieldname": "fstatus",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "F.Status",
+   "options": "F0\nF1\nF2\nF3\nF4\nF5"
+  },
+  {
+   "fieldname": "afp2",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "AFP2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_syiow",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-20 10:28:48.339183",
+ "modified": "2023-12-10 09:27:03.986607",
  "modified_by": "Administrator",
  "module": "AllTargeting",
  "name": "Flagedu-Lead",

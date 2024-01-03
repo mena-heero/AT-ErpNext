@@ -42,12 +42,15 @@
   "tiktok_followers",
   "snapchat_followers",
   "facebook_followers",
-  "our_ads"
+  "our_ads",
+  "date_added"
  ],
  "fields": [
   {
    "fieldname": "channel_name",
    "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
    "label": "Channel Name ",
    "reqd": 1,
    "unique": 1
@@ -55,6 +58,8 @@
   {
    "fieldname": "channel_link",
    "fieldtype": "Text",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
    "label": "Channel link"
   },
   {
@@ -109,10 +114,11 @@
    "options": "Cancel\nFollow Up\nNew\nDone"
   },
   {
+   "default": "in progress",
    "fieldname": "pastads",
    "fieldtype": "Select",
    "label": "Past.Ads",
-   "options": "Paid\nCommisiion"
+   "options": "Paid\nCommisiion\nin progress"
   },
   {
    "collapsible": 1,
@@ -137,6 +143,7 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_global_search": 1,
    "label": "Email"
   },
   {
@@ -174,7 +181,7 @@
    "fieldname": "inserted_by",
    "fieldtype": "Select",
    "label": "Inserted By",
-   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nNairaa\nShahinda\nother"
+   "options": "Marina\nVivian\nChirsteen\nMark\nHeero\nNairaa\nShahinda\nother\nVerina\nMahmoud"
   },
   {
    "fieldname": "photo",
@@ -242,12 +249,17 @@
    "fieldname": "our_ads",
    "fieldtype": "Long Text",
    "label": "Our Ads"
+  },
+  {
+   "fieldname": "date_added",
+   "fieldtype": "Date",
+   "label": "Date Added"
   }
  ],
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-19 13:58:55.336850",
+ "modified": "2023-12-24 09:36:43.884483",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Influencers",
@@ -279,6 +291,7 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "channel_name,channel_link,email",
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
