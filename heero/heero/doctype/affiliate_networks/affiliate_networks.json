@@ -11,10 +11,12 @@
  "field_order": [
   "name1",
   "website",
-  "insterted_by",
   "contacted",
   "column_break_tuopd",
   "date",
+  "status",
+  "follow_up_section",
+  "follow_up",
   "section_break_lpofw",
   "email",
   "email2",
@@ -22,6 +24,7 @@
   "column_break_gbh3d",
   "phone",
   "phone2",
+  "insterted_by",
   "section_break_wyil4",
   "full_contacts",
   "column_break_ztqdx",
@@ -45,7 +48,7 @@
    "fieldtype": "Select",
    "in_standard_filter": 1,
    "label": "Insterted By",
-   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nOther"
+   "options": "Mark\nMarina\nVivian\nChirsteen\nHeero\nNairaa\nShahinda\nViola\nYoussef\nOther"
   },
   {
    "default": "0",
@@ -119,10 +122,28 @@
    "fieldname": "notes",
    "fieldtype": "Text Editor",
    "label": "Notes"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Form Sent\nEmail Sent\nNot Affiliates"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "follow_up_section",
+   "fieldtype": "Section Break",
+   "label": "Follow Up"
+  },
+  {
+   "fieldname": "follow_up",
+   "fieldtype": "Table",
+   "label": "Follow Up",
+   "options": "Lead FollowUp"
   }
  ],
  "links": [],
- "modified": "2023-10-02 16:41:27.901253",
+ "modified": "2024-01-21 17:19:52.225391",
  "modified_by": "Administrator",
  "module": "Heero",
  "name": "Affiliate Networks",
