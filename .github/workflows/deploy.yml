@@ -1,0 +1,60 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+      - stable
+
+jobs:
+  production-build:
+    name: Production Build
+    if: github.ref == 'refs/heads/stable'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Git Repo
+        uses: actions/checkout@v2
+
+      - name: Docker Login
+        env:
+          DOCKER_USER: ${{ secrets.DOCKER_USER }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: |
+          docker login docker.io -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+      - name: Production Build Script
+        run: |
+            docker build \
+            --build-arg=FRAPPE_PATH=https://github.com/frappe/frappe \
+            --build-arg=FRAPPE_BRANCH=version-15-hotfix \
+            --build-arg=PYTHON_VERSION=3.11.6 \
+            --build-arg=NODE_VERSION=18.18.2 \
+            --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
+            --tag=menaheero/heerocrm:V5 \
+            --file=images/custom/Containerfile .
+
+            docker push docker.io/menaheero/heerocrm:V5
+
+  production-deploy:
+    name: Production Deploy
+    needs: production-build
+    if: github.ref == 'refs/heads/stable'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SSH Client
+        run: |
+          sudo apt-get update
+          sudo apt-get install openssh-client -y
+
+      - name: Production Deploy Script
+        env:
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          SERVER_USERNAME: ${{ secrets.SERVER_USERNAME }}
+          SERVER_SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p /home/runner/.ssh
+          ssh-keyscan -H $SERVER_IP >> /home/runner/.ssh/known_hosts
+          echo "$SERVER_SSH_PRIVATE_KEY" > /home/runner/.ssh/id_rsa
+          chmod 600 /home/runner/.ssh/id_rsa
+
+          ssh -i /home/runner/.ssh/id_rsa -o StrictHostKeyChecking=no $SERVER_USERNAME@$SERVER_IP "cd ~/gitops && docker-compose pull && docker-compose  stop && docker compose --project-name erpnext-one -f ~/gitops/erpnext-one.yaml up -d "
